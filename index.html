@@ -17,31 +17,42 @@
       </a>
       <!-- Здесь будет форма поиска -->
 
-      <section>
-        <h2>Взаимодействие с товарами</h2>
-        <a href="blank.html">Закладки: <span>0</span></a>
-        <a href="blank.html">Корзина: <span>0</span></a>
-        <a href="blank.html">Оформить заказ</a>
-      </section>
+      <!-- Далее здесь и в футере деление на секции было заменено на отдельные списки
+      и убраны заголовки второго уровня (в дальнейшем спискам будут присвоены классы,
+      названные по аналогии с содержанием тех заголовков, которые объясняли,
+      что объединяет элементы списка [в лекции объединение некоторых из этих элементов ставилось под вопрос])
+      Корректен ли такой подход?
+      Нужно ли списки дополнительно оборачивать в теги секций,
+      чтобы сделать акцент на смысловом делении (как, например, отдельно обернут список навигации)
+      или деления на отдельные списки итак достаточно?
+      (В демке https://up.htmlacademy.ru/htmlcss/28/demos/3645#30 футер был разбит на секции.
+      Это было сделано, потому что там были явные заголовки?) -->
+      <ul>
+        <li><a href="blank.html">Закладки: <span>0</span></a></li>
+        <li><a href="blank.html">Корзина: <span>0</span></a></li>
+        <li><a href="blank.html">Оформить заказ</a></li>
+      </ul>
 
-      <section>
-        <h2>Информация о магазине</h2>
-        <p>
+      <ul>
+        <li>
+          <p>
           Интернет-магазин<br>
           строительных материалов<br>
           и инструментов для ремонта
-        </p>
-      </section>
+          </p>
+        </li>
+        <li>
           <address>
             <a href="tel: +78125550555">+7 (812) 555-05-55</a>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </address>
+        </li>
+      </ul>
 
-      <section>
-        <h2>Личный кабинет</h2>
-        <a href="">Войти</a>
-        <a href="">Регистрация</a>
-      </section>
+      <ul>
+        <li><a href="">Войти</a></li>
+        <li><a href="">Регистрация</a></li>
+      </ul>
 
       <nav>
         <ul>
@@ -302,43 +313,34 @@
         <a href="tel: +78125550555">+7 (812) 555-05-55</a>
       </address>
 
-      <section>
-        <h2>Товары</h2>
-        <ul>
-          <li><a href="catalog.html">Материалы</a></li>
-          <li><a href="catalog.html">Техника</a></li>
-          <li><a href="catalog.html">Инструмент</a></li>
-          <li><a href="catalog.html">Спецпредложения</a></li>
-        </ul>
-      </section>
+      <ul>
+        <li><a href="catalog.html">Материалы</a></li>
+        <li><a href="catalog.html">Техника</a></li>
+        <li><a href="catalog.html">Инструмент</a></li>
+        <li><a href="catalog.html">Спецпредложения</a></li>
+      </ul>
 
       <p>
         &#169; 2010–2019 Компания «Техномарт»<br>
         Все права защищены
       </p>
 
-      <section>
-        <h2>Социальные сети</h2>
-        <ul>
-          <li><a href="">Вконтакте</a></li>
-          <li><a href="">Фейсбук</a></li>
-          <li><a href="">Инстаграм</a></li>
-        </ul>
-      </section>
+      <ul>
+        <li><a href="">Вконтакте</a></li>
+        <li><a href="">Фейсбук</a></li>
+        <li><a href="">Инстаграм</a></li>
+      </ul>
 
-      <section>
-        <h2>Контакты авторов</h2>
-        <ul>
-          <li>
-            Обратная связь:<br>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li>
-            Разработано —<br>
-            <a href="https://htmlacademy.ru/study">htmlacademy.ru</a>
-          </li>
-        </ul>
-      </section>
+      <ul>
+        <li>
+          Обратная связь:<br>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+        <li>
+          Разработано —<br>
+          <a href="https://htmlacademy.ru/study">htmlacademy.ru</a>
+        </li>
+      </ul>
 
     </footer>
 
