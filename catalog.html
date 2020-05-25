@@ -82,12 +82,10 @@
         <form action="https://echo.htmlacademy.ru/" method="get" oninput="priceoutput.value=price.value">
           <fieldset>
             <legend>Цена:</legend>
-            <!-- Это все еще не то. Нужен js
-            <input type="range" name="price" min="0" max="35000" step="10">
-            <output name="priceoutput">30000</output>
-            или
-            <input type="number" name="sum" id="sum-field" min="0" max="35000">
-            -->
+            <!-- Временный вариант. Все еще думаю. Нужен js. -->
+            <input type="number" name="sum-min" id="filter-sum-min" min="0" max="35000" value="0">
+            <p> — </p>
+            <input type="number" name="sum-max" id="filter-sum-max" min="0" max="35000" value="30000">
           </fieldset>
 
           <fieldset>
