@@ -82,10 +82,15 @@
         <form action="https://echo.htmlacademy.ru/" method="get" oninput="priceoutput.value=price.value">
           <fieldset>
             <legend>Цена:</legend>
-            <!-- Временный вариант. Все еще думаю. Нужен js. -->
-            <input type="number" name="sum-min" id="filter-sum-min" min="0" max="35000" value="0">
+            <div>
+              <button type="button"><span class="visually-hidden">Изменить нижнюю границу диапазона цены</span></button>
+              <button type="button"><span class="visually-hidden">Изменить верхнюю границу диапазона цены</span></button>
+            </div>
+            <input type="hidden" name="price-min" id="filter-price-min" value="0">
+            <input type="hidden" name="price-max" id="filter-price-max" value="35000">
+            <input type="number" name="user-price-min" id="filter-user-price-min" min="0" max="35000" value="0">
             <p> — </p>
-            <input type="number" name="sum-max" id="filter-sum-max" min="0" max="35000" value="30000">
+            <input type="number" name="user-price-max" id="filter-user-price-max" min="0" max="35000" value="30000">
           </fieldset>
 
           <fieldset>
