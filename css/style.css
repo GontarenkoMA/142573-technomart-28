@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum'),
+       url('../fonts/cuprum.woff2') format('woff2'),
+       url('../fonts/cuprum.woff') format('woff'),
+       url('../fonts/cuprum.woff') format('ttf');
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cuprum Bold'),
+       url('../fonts/cuprumbold.woff2') format('woff2'),
+       url('../fonts/cuprumbold.woff') format('woff'),
+       url('../fonts/cuprumbold.woff') format('ttf');
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Cuprum Bold Italic'),
+       url('../fonts/cuprumbolditalic.woff2') format('woff2'),
+       url('../fonts/cuprumbolditalic.woff') format('woff'),
+       url('../fonts/cuprumbolditalic.woff') format('ttf');
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cuprum Italic'),
+       url('../fonts/cuprumitalic.woff2') format('woff2'),
+       url('../fonts/cuprumitalic.woff') format('woff'),
+       url('../fonts/cuprumitalic.woff') format('ttf');
+}
+@font-face {
+  font-family: 'Ptsans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ptsans'),
+       url('../fonts/ptsans.woff2') format('woff2'),
+       url('../fonts/ptsans.woff') format('woff'),
+       url('../fonts/ptsans.woff') format('ttf');
+}
+@font-face {
+  font-family: 'Ptsans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ptsans Bold'),
+       url('../fonts/ptsansbold.woff2') format('woff2'),
+       url('../fonts/ptsansbold.woff') format('woff'),
+       url('../fonts/ptsansbold.woff') format('ttf');
+}
