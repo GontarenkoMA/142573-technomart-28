@@ -55,6 +55,7 @@
 
 :root {
   --basic-white: #ffffff;
+  --rgb-white: 255, 255, 255;
   --basic-black: #000000;
 /* 50 оттенков асфальта */
   --basic-asphaltxxlight: #F3F7F9;    /*фон хедера?, телефона в хедере*/
@@ -77,29 +78,761 @@
 /* зеленые */
   --basic-green: #63A63E;             /*кнопки "Оформить заказ", "Купить" и прочее*/
   --basic-a-greenlight: #5FBB2D;      /*кнопки "Оформить заказ", "Купить" при наведений*/
-  --basic-a-greendark: #518534;       /*кнопки "Оформить заказ", "Купить" при клике*/
+  --basic-a-greendark: #367315;       /*кнопки "Оформить заказ", "Купить" при клике*/
 /* желтый */
   --basic-yellowlight: #FFD180;       /*ссылки навигации разделов каталога и ссылки контактов в футере*/
 /* серые */
   --basic-greyxlight: #EAEAEA;        /*рамки карточек товара и произволителей*/
   --basic-greylight: #C5C5C5;         /*иконки входа/выхода, чекбоксы, радио, сортировка, фон кнопки в разделе "Разделы каталога" при наведении (a=30%)*/
   --basic-greysemilight: #B5B5B5;     /*чекбоксы и радио при наведении и блокировке(a=30%)*/
+  --rgb-greylight: 197, 197, 197;
   --basic-grey: #A9A9A9;              /*старая цена и плейсхолдеры, фон кнопки в разделе "Разделы каталога" при клике (a=30%)*/
-  /*Изпользуются в блоке с разделами: "Разделы каталога",
-  "Подразделы раздела каталога "Инструменты"", "Специальные предложения"*/
+  --rgb-grey: 169, 169, 169;
+/*Изпользуются в блоке с разделами: "Разделы каталога",
+"Подразделы раздела каталога "Инструменты"", "Специальные предложения"*/
   --special-yellowdark: #FFBF47;
   --special-yellow: #FFC047;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
   --special-greenlight: #8ED78F;
-  /*Точечные*/
+/*Точечные*/
   --phoneicon: #B7BFC8;               /*цвет иконки телефона в хедере*/
   --socialwebs: #212A3A;              /*фон соц сетей в футере*/
   --feedbackfooter: #F4F4F4;          /*футер всплывающего окна обратной связи*/
   --addedfooter: #F1F1F1;             /*футер всплывающего окна добавления товара*/
-  --cookies: #C1C6CE;                 /*хлебные крошки в каталоге */
-  --pricerangebg: #00CA74;            /*активная шкала формы цены*/
-  --pricerange: #D7DCDE;              /*фон шкалы формы цены*/
+  --breadcrumbs: #C1C6CE;                 /*хлебные крошки в каталоге */
+  --pricerange: #00CA74;            /*активная шкала формы цены*/
+  --pricerangebg: #D7DCDE;              /*фон шкалы формы цены*/
   --pricedash: #444444;               /*тире между полями ввода формы цены*/
   --catalogbuttons: #E5E5E5;          /*границы кнопок "Показать" и навигации страниц в каталоге*/
+  --alpha-30: 0.3;
+  --alpha-50: 0.5;
+}
+/* Common */
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*А если я сделаю так, это все еще считается нарушением Д25?*/
+.page-body ul{
+  list-style: none;
+  padding: 0;
+}
+.page-body address{
+  font-style: normal;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+.button {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: none;
+}
+.button:active {
+  background-color: var(--basic-a-reddark);
+}
+.paragraph-text{
+  font-family: "Ptsans", Arial, sans-serif;
+}
+
+/* Header */
+.main-header {
+  background-color: var(--basic-asphaltlight);
+}
+
+/* Header top bar */
+.header-top {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: var(--basic-asphalt);
+}
+.header-logo {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+.header-logo:active {
+  background-color: var(--basic-a-reddark);
+}
+/*Тут и далее пока что не знаю наверняка, что надо делать с иконками,
+чтобы их оживить, но подключу, пусть хоть как-то будут*/
+.header-search {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-search.svg");
+}
+.header-search:hover {
+}
+.header-search:empty {
+  background-color: var(--basic-asphalt);
+  color: var(--basic-white);
+}
+.header-search:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+.products-interaction-item {
+  color: var(--basic-white);
+  background-repeat: no-repeat;
+}
+.products-interaction-item:active {
+  background-color: var(--basic-asphaltdark);
+}
+.products-interaction-item-bookmarks{
+  background-image: url("../img/icon-bookmark.svg");
+}
+.products-interaction-item-cart{
+  background-image: url("../img/icon-cart.svg");
+}
+.products-interaction-item-order {
+  background-color: var(--basic-green);
+}
+.products-interaction-item-order:hover,
+.products-interaction-item-order:focus {
+  background-color: var(--basic-a-greenlight);
+}
+.products-interaction-item-order:active {
+  background-color: var(--basic-a-greendark);
+}
+
+/* Header middle space */
+.short-info {
+  color: var(--basic-red);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+}
+.header-address {
+  text-align: center;
+  color: var(--basic-asphaltsemilight);
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  width: 270px;
+}
+.header-phone {
+  color: var(--basic-red);
+  font-size: 21px;
+  line-height: 30px;
+  background-color: var(--basic-asphaltxxlight);
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--basic-white);
+  display: block;
+  width: 270px;
+  height: 45px;
+}
+.user-navigation {
+  font-size: 21px;
+  line-height: 21px;
+}
+.user-navigation-log {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Пока что не знаю точно, как сделать икони,
+которые бы реагировали на взаимодействие
+.logout {
+  background-image: url("../img/icon-logout.svg");
+  height: 17px;
+  width: 19.91px;
+}
+.login {
+  background-image: url("../img/icon-login.svg");
+  height: 17px;
+  width: 19.91px;
+}*/
+.user-navigation-log:hover,
+.user-navigation-log:focus {
+  color: var(--basic-red);
+}
+.user-navigation-log:active {
+  color: var(--basic-greylight);
+}
+.user-navigation-inside{
+  color: var(--basic-asphaltsemilight);
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 18px;
+}
+.user-navigation-inside:hover,
+.user-navigation-inside:focus{
+  color: var(--basic-red);
+}
+.user-navigation-inside:active {
+  color: var(--basic-greylight);
+}
+
+/* Header navigation */
+.header-navigation-wrapper {
+  background-color: var(--basic-asphaltsemilight);
+  border-bottom: 5px solid var(--basic-asphalt);
+}
+.header-site-navigation {
+}
+.header-site-navigation a {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+}
+.header-site-navigation a:hover,
+.header-site-navigation a:focus {
+  background-color: var(--basic-asphalt);
+}
+.header-site-navigation a:active {
+  background-color: var(--basic-asphaltsemidark);
+  color: rgba(var(--rgb-white), var(--alpha-50));
+}
+
+/* Footer */
+.main-footer {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-asphaltlight);
+  background-color: var(--basic-asphaltsemilight);
+}
+.footer-logo {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+.footer-logo:active {
+  background-color: var(--basic-a-reddark);
+}
+.footer-phone{
+  color: var(--basic-asphaltlight);
+}
+.footer-site-navigation-item {
+  color: var(--basic-asphaltlight);
+}
+.footer-catalog-navigation-item {
+  color: var(--basic-yellowlight);
+}
+.footer-site-navigation-item:focus,
+.footer-site-navigation-item:hover,
+.footer-catalog-navigation-item:focus,
+.footer-catalog-navigation-item:hover{
+  text-decoration: underline;
+}
+.footer-site-navigation-item:active,
+.footer-catalog-navigation-item:active {
+  text-decoration: none;
+  opacity: var(--alpha-50);
+}
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-asphalt);
+}
+.contact-authours {
+  color: var(--basic-yellowlight);
+}
+.contact-authours:focus,
+.contact-authours:hover {
+  text-decoration: underline;
+}
+.contact-authours:active {
+  text-decoration: none;
+  color: var(--basic-red);
+}
+a.socialwebs-vk,
+a.socialwebs-fb,
+a.socialwebs-ig {
+  color: var(--basic-white);
+  border-radius: 50%;
+  background-color: var(--socialwebs);
+  height: 44px;
+  width: 44px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+a.socialwebs-vk:hover,
+a.socialwebs-fb:hover,
+a.socialwebs-ig:hover,
+a.socialwebs-vk:focus,
+a.socialwebs-fb:focus,
+a.socialwebs-ig:focus,
+a.socialwebs-vk:active,
+a.socialwebs-fb:active,
+a.socialwebs-ig:active {
+  background-color: var(--basic-red);
+}
+.socialwebs-vk{
+  background-image: url("../img/icon-vk.svg");
+}
+.socialwebs-fb{
+  background-image: url("../img/icon-fb.svg");
+}
+.socialwebs-ig{
+  background-image: url("../img/icon-insta.svg");
+}
+
+/* Index */
+.catalog-sections,
+.special-offers {
+  color: var(--basic-white);
+  font-size: 24px;
+  line-height: 30px;
+}
+.catalog-sections .button,
+.special-offers .button {
+  background-color: rgba(var(--rgb-white), var(--alpha-30));
+}
+.catalog-sections .button:focus,
+.catalog-sections .button:hover,
+.special-offers .button:focus,
+.special-offers .button:hover {
+  background-color: rgba(var(--rgb-greylight), var(--alpha-30));
+}
+.catalog-sections .button:active,
+.special-offers .button:active {
+  background-color: rgba(var(--rgb-grey), var(--alpha-30));
+}
+.catalog-sections-item ,
+.special-offers-item {
+  height: 123px;
+  width: 300px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.catalog-sections-materials {
+  background-color: var(--special-yellowdark);
+  background-image: url("../img/pic-paint.svg");
+}
+.catalog-sections-instruments {
+  background-color: var(--special-blue);
+  background-image: url("../img/pic-drill.svg");
+}
+.catalog-sections-machines {
+  background-color: var(--special-lilac);
+  background-image: url("../img/pic-tractor.svg");
+}
+.special-offers-discount {
+  background-color: var(--special-greenlight);
+  background-image: url("../img/pic-cart.svg");
+}
+.special-offers-delivery {
+  background-color: var(--special-yellow);
+  background-image: url("../img/pic-truck.svg");
+}
+.slider-instruments{
+  background-color: var(--special-asphaltsemilight);
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+  background-repeat: no-repeat;
+}
+.slider-items{
+}
+.item-name{
+  font-size: 36px;
+  line-height: 36px;
+}
+.slider-item{
+  height: 266px;
+  width: 620px;
+}
+.slider-control {
+  background-color: transparent;
+  border: none;
+  display: block;
+  height: 40px;
+  width: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slider-item-drill{
+  background-image: url("../img/slider-drill.jpg");
+}
+.slider-item-perforator{
+  background-image: url("../img/slider-perforator.jpg");
+}
+.button-forward{
+  background-image: url("../img/icon-left.svg");
+}
+.button-backward{
+  background-image: url("../img/icon-left.svg");
+}
+.section-name,
+.subsection-name,
+.catalog-section-name {
+  color: var(--basic-black);
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.subsection-name,
+.catalog-section-name {
+  color: var(--basic-asphaltsemilight);
+}
+.subsection-header{
+  background-color: var(--basic-cream);
+}
+.catalog-item,
+.producer-item {
+  background-color: var(--basic-white);
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--basic-greyxlight);
+/*  height: 318px;*/
+  width: 220px;
+  display: block;
+}
+.producer-item {
+  height: 145px;
+}
+.catalog-item:hover,
+.catalog-item:focus,
+.producer-item:hover,
+.producer-item:focus {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+.producer-item:active {
+  opacity: var(--alpha-50);
+}
+.old-price {
+  text-decoration: line-through;
+  color: var(--basic-grey);
+  font-size: 17px;
+  line-height: 18px;
+}
+.catalog-item-buttons {
+  background-color: var(--basic-white);
+}
+.actual-price {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  font-size: 17px;
+  line-height: 18px;
+}
+.add-to-cart {
+  background-color: var(--basic-green);
+  border-radius: 2px;
+  border-bottom: 3px solid var(--basic-a-greendark);
+}
+.add-to-cart:focus,
+.add-to-cart:hover {
+  background-color: var(--basic-a-greenlight);
+}
+.add-to-cart:active {
+  background-color: var(--basic-a-greendark);
+}
+.add-to-cart::before {
+  content: url("../img/icon-cart.svg");
+  opacity: var(--alpha-30);
+}
+.add-to-bookmarks {
+  color: var(--basic-asphaltsemilight);
+  background-color: var(--basic-white);
+  border-radius: 2px;
+  border-color: var(--basic-green);
+  border-style: solid;
+  border-width: 3px;
+}
+.add-to-bookmarks:focus,
+.add-to-bookmarks:hover,
+.add-to-bookmarks:active {
+  background-color: var(--basic-white);
+  border-color: var(--basic-asphaltsemilight);
+}
+.add-to-bookmarks:active {
+  opacity: var(--alpha-50);
+}
+.section-service-wrapper,
+.section-facts-wrapper {
+  background-color: var(--basic-asphaltlight);
+}
+.service-tab {
+  color: var(--basic-white);
+  background-color: var(--basic-asphaltsemilight);
+  border: none;
+  font-size: 21px;
+  line-height: 30px;
+}
+.service-tab:hover,
+.service-tab:focus {
+  background-color: var(--basic-asphalt);
+}
+.service-tab:active,
+.service-tab:disabled {
+  color: var(--basic-asphaltsemilight);
+  background-color: var(--basic-white);
+}
+.section-service-wrapper article{
+  background-repeat: no-repeat;
+}
+.service-delivery {
+  background-image: url("../img/pic-delivery.png");
+}
+.service-guarantee {
+  background-image: url("../img/pic-guarantee.png");
+}
+.service-credit {
+  background-image: url("../img/pic-credit.png");
+}
+.transport-companies{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Index feedback window */
+.feedback-window{
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: none;
+  border-top: 7px solid var(--basic-redlight);
+}
+.feedback-window-form {
+  color: var(--basic-black);
+  border: 2px solid var(--basic-greylight);
+  border-radius: 2px;
+  font-size: 13px;
+  line-height: 24px;
+}
+.feedback-window-footer{
+  background-color: var(--feedbackfooter);
+}
+
+/* Index map window */
+.map-window,
+.adding-window {
+  border: none;
+  border-top: 7px solid var(--basic-red);
+}
+.close-button,
+.close-button:hover,
+.close-button:focus,
+.close-button:active{
+  background-image: url("../img/icon-close.svg");
+  background-color: transparent;
+  border: none;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20.97px;
+  width: 20.97px;
+}
+.continue-shopping-button,
+.continue-shopping-button:hover,
+.continue-shopping-button:focus,
+.continue-shopping-button:active {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/* catalog adding window */
+.adding-window-message {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.adding-window-message::before {
+  content: url("../img/icon-mark.svg");
+  background-color: var(--basic-green);
+  display: block;
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+}
+.adding-window-footer{
+  background-color: var(--addedfooter);
+}
+
+/* catalog */
+.breadcrumbs-navigation-item {
+  color: var(--basic-black);
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Ptsans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.breadcrumbs-navigation-home {
+  background-image: url("../img/icon-home.svg");
+  display: block;
+  height: 12px;
+  width: 14px;
+}
+.catalog-section-name {
+  background-color: var(--basic-asphaltxlight);
+}
+.filter-wrapper{
+  background-color: var(--basic-creamdark);
+  border-radius: 2px;
+  font-family: "Ptsans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: none;
+}
+.sorting-parameter,
+.showing-parameter {
+  background-color: transparent;
+  color: var(--basic-black);
+  font-family: "Ptsans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: var(--alpha-30);
+  border: none;
+  border-bottom: 1px dotted var(--basic-red);
+}
+.sorting-parameter:focus,
+.showing-parameter:focus,
+.sorting-parameter:hover,
+.showing-parameter:hover {
+  opacity: 1;
+  border-bottom-style: solid;
+}
+.sorting-parameter:active,
+.showing-parameter:active,
+.sorting-parameter:disabled,
+.showing-parameter:disabled {
+  background-color: transparent;
+  color: var(--basic-red);
+  opacity: 1;
+  border-bottom: none;
+}
+.showing-parameter,
+.showing-parameter:focus,
+.showing-parameter:hover,
+.showing-parameter:active,
+.showing-parameter:disabled {
+  border: none;
+}
+/* Для того, чтобы сделать иконци-треугольнички */
+.go-up {
+}
+.go-down {
+}
+.filter-parameter {
+   font-family: "Ptsans", Arial, sans-serif;
+   font-size: 17px;
+   line-height: 30px;
+   font-weight: 700;
+ }
+.price-gange-input{
+  background-image: url("../img/filter-button.svg");
+  display: block;
+  height: 22px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+}
+/* Без понятия, что это за фигня, пусть, пока что будет так */
+.range-line-background{
+  background-color: var(--pricerangebg);
+  display: block;
+  height: 2px;
+  width: 180px;
+  border: none;
+}
+.range-line{
+  background-color: var(--pricerange);
+  display: block;
+  height: 2px;
+  width: 152px;
+  border: none;
+}
+.price-number-input{
+  color: var(--basic-black);
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+}
+.price-dash {
+  color: var(--pricedash);
+  font-family: "Ptsans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+.filter-by-producer-item,
+.filter-by-power-item {
+  color: var(--basic-black);
+  font-size: 15px;
+  line-height: 19px;
+  font-family: "Ptsans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.filter-by-power-item {
+}
+
+/* Pagination */
+.page,
+.submit-filter {
+  font-family: "Ptsans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: 1px solid var(--catalogbuttons);
+  border-radius: 2px;
+  text-align: center;
+  display: block;
+  height: 38px;
+  width: 38px;
+}
+.page:focus,
+.page:hover,
+.submit-filter:focus,
+.submit-filter:hover {
+  border-color: var(--basic-greylight);
+}
+.page:active,
+.submit-filter:active {
+  border-color: var(--basic-red);
+}
+.current-page {
+  background-color: var(--basic-red);
+  border-color: var(--basic-red);
+  color: var(--basic-white);
+  border: none;
+}
+.next-page{
+  width: 140px;
+}
+.submit-filter {
+  width: 220px;
 }
