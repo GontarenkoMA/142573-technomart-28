@@ -127,11 +127,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-/*А если я сделаю так, это все еще считается нарушением Д25?*/
-.page-body ul{
-  list-style: none;
-  padding: 0;
-}
 .page-body address{
   font-style: normal;
 }
@@ -260,6 +255,8 @@ img {
 .user-navigation {
   font-size: 21px;
   line-height: 21px;
+  list-style: none;
+  padding: 0;
 }
 .user-navigation-log {
   color: var(--basic-black);
@@ -306,6 +303,8 @@ img {
   border-bottom: 5px solid var(--basic-asphalt);
 }
 .header-site-navigation {
+  list-style: none;
+  padding: 0;
 }
 .header-site-navigation a {
   color: var(--basic-white);
@@ -338,8 +337,16 @@ img {
 .footer-phone{
   color: var(--basic-asphaltlight);
 }
+.footer-site-navigation-items {
+  list-style: none;
+  padding: 0;
+}
 .footer-site-navigation-item {
   color: var(--basic-asphaltlight);
+}
+.footer-catalog-navigation {
+  list-style: none;
+  padding: 0;
 }
 .footer-catalog-navigation-item {
   color: var(--basic-yellowlight);
@@ -354,12 +361,18 @@ img {
 .footer-catalog-navigation-item:active {
   text-decoration: none;
   opacity: var(--alpha-50);
+  list-style: none;
+  padding: 0;
 }
 .footer-bottom {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--basic-asphalt);
+}
+.contact-authours-list {
+  list-style: none;
+  padding: 0;
 }
 .contact-authours {
   color: var(--basic-yellowlight);
@@ -407,6 +420,8 @@ a.socialwebs:active {
   color: var(--basic-white);
   font-size: 24px;
   line-height: 30px;
+  list-style: none;
+  padding: 0;
 }
 .catalog-sections .button,
 .special-offers .button {
@@ -504,6 +519,11 @@ a.socialwebs:active {
 .subsection-header{
   background-color: var(--basic-cream);
 }
+.catalog-items-list,
+.producers-list {
+  list-style: none;
+  padding: 0;
+}
 .catalog-item,
 .producer-item {
   background-color: var(--basic-white);
@@ -537,6 +557,8 @@ a.socialwebs:active {
 }
 .catalog-item-buttons {
   background-color: var(--basic-white);
+  list-style: none;
+  padding: 0;
 }
 .actual-price {
   color: var(--basic-white);
@@ -582,6 +604,10 @@ a.socialwebs:active {
 .section-facts-wrapper {
   background-color: var(--basic-asphaltlight);
 }
+.services-list {
+  list-style: none;
+  padding: 0;
+}
 .service-tab {
   color: var(--basic-white);
   background-color: var(--basic-asphaltsemilight);
@@ -613,6 +639,8 @@ a.socialwebs:active {
 .transport-companies{
   font-size: 18px;
   line-height: 24px;
+  list-style: none;
+  padding: 0;
 }
 
 /* Index feedback window */
@@ -678,9 +706,15 @@ a.socialwebs:active {
 }
 .adding-window-footer{
   background-color: var(--addedfooter);
+  list-style: none;
+  padding: 0;
 }
 
 /* catalog */
+.breadcrumbs-navigation {
+  list-style: none;
+  padding: 0;
+}
 .breadcrumbs-navigation-item {
   color: var(--basic-black);
   font-size: 13px;
@@ -749,11 +783,15 @@ a.socialwebs:active {
 .go-down {
 }
 .filter-parameter {
-   font-family: "Ptsans", Arial, sans-serif;
-   font-size: 17px;
-   line-height: 30px;
-   font-weight: 700;
+  font-family: "Ptsans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
  }
+.filter-parameter-list{
+  list-style: none;
+  padding: 0;
+}
 .price-gange-input{
   background-image: url("../img/filter-button.svg");
   display: block;
@@ -802,6 +840,10 @@ a.socialwebs:active {
 }
 
 /* Pagination */
+.pagination-list{
+  list-style: none;
+  padding: 0;
+}
 .page,
 .submit-filter {
   font-family: "Ptsans", Arial, sans-serif;
