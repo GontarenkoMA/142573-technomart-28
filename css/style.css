@@ -5,7 +5,7 @@
   src: local('Cuprum'),
        url('../fonts/cuprum.woff2') format('woff2'),
        url('../fonts/cuprum.woff') format('woff'),
-       url('../fonts/cuprum.woff') format('ttf');
+       url('../fonts/cuprum.ttf') format('ttf');
 }
 @font-face {
   font-family: 'Cuprum';
@@ -14,7 +14,7 @@
   src: local('Cuprum Bold'),
        url('../fonts/cuprumbold.woff2') format('woff2'),
        url('../fonts/cuprumbold.woff') format('woff'),
-       url('../fonts/cuprumbold.woff') format('ttf');
+       url('../fonts/cuprumbold.ttf') format('ttf');
 }
 @font-face {
   font-family: 'Cuprum';
@@ -23,7 +23,7 @@
   src: local('Cuprum Bold Italic'),
        url('../fonts/cuprumbolditalic.woff2') format('woff2'),
        url('../fonts/cuprumbolditalic.woff') format('woff'),
-       url('../fonts/cuprumbolditalic.woff') format('ttf');
+       url('../fonts/cuprumbolditalic.ttf') format('ttf');
 }
 @font-face {
   font-family: 'Cuprum';
@@ -32,7 +32,7 @@
   src: local('Cuprum Italic'),
        url('../fonts/cuprumitalic.woff2') format('woff2'),
        url('../fonts/cuprumitalic.woff') format('woff'),
-       url('../fonts/cuprumitalic.woff') format('ttf');
+       url('../fonts/cuprumitalic.ttf') format('ttf');
 }
 @font-face {
   font-family: 'Ptsans';
@@ -41,7 +41,7 @@
   src: local('Ptsans'),
        url('../fonts/ptsans.woff2') format('woff2'),
        url('../fonts/ptsans.woff') format('woff'),
-       url('../fonts/ptsans.woff') format('ttf');
+       url('../fonts/ptsans.ttf') format('ttf');
 }
 @font-face {
   font-family: 'Ptsans';
