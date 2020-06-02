@@ -199,12 +199,19 @@ img {
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
-.products-interaction-item {
-  color: var(--basic-white);
-  background-repeat: no-repeat;
+.products-interaction {
+  list-style: none;
+  padding: 0;
 }
 .products-interaction-item:active {
   background-color: var(--basic-asphaltdark);
+}
+.products-interaction-item-text {
+  background-repeat: no-repeat;
+  color: var(--basic-white);
+}
+.products-interaction-item-text:active{
+  opacity: var(--alpha-50);
 }
 .products-interaction-item-bookmarks{
   background-image: url("../img/icon-bookmark.svg");
