@@ -372,9 +372,11 @@ img {
   text-decoration: none;
   color: var(--basic-red);
 }
-a.socialwebs-vk,
-a.socialwebs-fb,
-a.socialwebs-ig {
+.socialwebs {
+  list-style: none;
+  padding: 0;
+}
+a.socialwebs {
   color: var(--basic-white);
   border-radius: 50%;
   background-color: var(--socialwebs);
@@ -384,15 +386,9 @@ a.socialwebs-ig {
   background-repeat: no-repeat;
   background-position: center;
 }
-a.socialwebs-vk:hover,
-a.socialwebs-fb:hover,
-a.socialwebs-ig:hover,
-a.socialwebs-vk:focus,
-a.socialwebs-fb:focus,
-a.socialwebs-ig:focus,
-a.socialwebs-vk:active,
-a.socialwebs-fb:active,
-a.socialwebs-ig:active {
+a.socialwebs:hover,
+a.socialwebs:focus,
+a.socialwebs:active {
   background-color: var(--basic-red);
 }
 .socialwebs-vk{
