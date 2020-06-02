@@ -535,7 +535,6 @@ a.socialwebs-ig:active {
   opacity: var(--alpha-50);
 }
 .old-price {
-  text-decoration: line-through;
   color: var(--basic-grey);
   font-size: 17px;
   line-height: 18px;
@@ -548,6 +547,7 @@ a.socialwebs-ig:active {
   background-color: var(--basic-red);
   font-size: 17px;
   line-height: 18px;
+  text-decoration: none;
 }
 .add-to-cart {
   background-color: var(--basic-green);
