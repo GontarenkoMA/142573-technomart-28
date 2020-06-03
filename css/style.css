@@ -385,11 +385,11 @@ img {
   text-decoration: none;
   color: var(--basic-red);
 }
-.socialwebs {
+.socialwebs-list {
   list-style: none;
   padding: 0;
 }
-a.socialwebs {
+.socialwebs {
   color: var(--basic-white);
   border-radius: 50%;
   background-color: var(--socialwebs);
@@ -399,9 +399,9 @@ a.socialwebs {
   background-repeat: no-repeat;
   background-position: center;
 }
-a.socialwebs:hover,
-a.socialwebs:focus,
-a.socialwebs:active {
+.socialwebs:hover,
+.socialwebs:focus,
+.socialwebs:active {
   background-color: var(--basic-red);
 }
 .socialwebs-vk{
