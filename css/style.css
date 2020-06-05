@@ -110,7 +110,7 @@
 }
 /* Common */
 body {
-  min-width: 1220px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
@@ -156,9 +156,35 @@ img {
   font-family: "Ptsans", Arial, sans-serif;
 }
 
+
+/* Grid */
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Container */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 /* Header */
 .main-header {
   background-color: var(--basic-asphaltlight);
+  margin-bottom: 59px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
 }
 
 /* Header top bar */
@@ -167,10 +193,27 @@ img {
   line-height: 24px;
   color: var(--basic-white);
   background-color: var(--basic-asphalt);
+  width: 100%;
+  margin-bottom: 37.5px;
+}
+.main-header-top-content{
+  display: flex;
+  justify-content: space-between;
+
 }
 .header-logo {
   color: var(--basic-white);
   background-color: var(--basic-red);
+  box-sizing: border-box;
+  border-bottom: 5px solid var(--basic-redline);
+  display: flex;
+  text-align: center;
+  width: 220px;
+  height: 47px;
+}
+.header-logo-img{
+  display: block;
+  margin: auto;
 }
 .header-logo:active {
   background-color: var(--basic-a-reddark);
@@ -226,11 +269,26 @@ img {
 }
 
 /* Header middle space */
+.header-middle-space {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  outline: 5px solid rgba(255, 255, 0, 0.3);
+  outline-offset: -5px;
+}
 .short-info {
   color: var(--basic-red);
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
+  display: block;
+  max-width: 200px;
+  margin: 0;
+
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 .header-address {
   text-align: center;
@@ -239,6 +297,9 @@ img {
   line-height: 24px;
   display: block;
   width: 270px;
+
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 .header-phone {
   color: var(--basic-red);
@@ -257,6 +318,12 @@ img {
   line-height: 21px;
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: block;
+  max-width: 300px;
+
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 .user-navigation-log {
   color: var(--basic-black);
@@ -301,21 +368,39 @@ img {
 .header-navigation-wrapper {
   background-color: var(--basic-asphaltsemilight);
   border-bottom: 5px solid var(--basic-asphalt);
+  width: 100%;
+  margin-top: 44.5px;
+  margin-bottom: 60px;
 }
 .header-site-navigation {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-basis: auto;
 }
-.header-site-navigation a {
+.header-site-navigation-list-item {
+  flex-grow: 1;
+  margin: 0;
+  display: flex;
+}
+/* For Maria: Тут еще надо сделать так,
+что бы расстояние от текста до краев было правильное между элементами и у краев бокса */
+.header-site-navigation-item {
   color: var(--basic-white);
   font-size: 18px;
   line-height: 24px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  flex-grow: 1;
+  display: block;
+  text-align: center;
 }
-.header-site-navigation a:hover,
-.header-site-navigation a:focus {
+.header-site-navigation-item:hover,
+.header-site-navigation-item:focus {
   background-color: var(--basic-asphalt);
 }
-.header-site-navigation a:active {
+.header-site-navigation-item:active {
   background-color: var(--basic-asphaltsemidark);
   color: rgba(var(--rgb-white), var(--alpha-50));
 }
@@ -844,7 +929,7 @@ img {
   list-style: none;
   padding: 0;
 }
-.page,
+.page-number,
 .submit-filter {
   font-family: "Ptsans", Arial, sans-serif;
   font-size: 13px;
@@ -859,23 +944,23 @@ img {
   height: 38px;
   width: 38px;
 }
-.page:focus,
-.page:hover,
+.page-number:focus,
+.page-number:hover,
 .submit-filter:focus,
 .submit-filter:hover {
   border-color: var(--basic-greylight);
 }
-.page:active,
+.page-number:active,
 .submit-filter:active {
   border-color: var(--basic-red);
 }
-.current-page {
+.current-page-number {
   background-color: var(--basic-red);
   border-color: var(--basic-red);
   color: var(--basic-white);
   border: none;
 }
-.next-page{
+.next-page-number {
   width: 140px;
 }
 .submit-filter {
