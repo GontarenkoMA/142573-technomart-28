@@ -67,22 +67,22 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
 
-      <div class="container">
+      <div class="container catalog-links">
         <section>
           <h2 class="visually-hidden">Разделы каталога</h2>
-          <ul class="catalog-sections">
+          <ul class="container catalog-sections">
             <li class="catalog-sections-item catalog-sections-materials">
-              <h3>Материалы</h3>
-              <a href="blank.html" class="button">на любой вкус</a>
-              <p>New</p>
+              <h3 class="catalog-links-item-name">Материалы</h3>
+              <a href="blank.html" class="button catalog-links-button">на любой вкус</a>
+              <p class="visually-hidden">New</p>
             </li>
             <li class="catalog-sections-item catalog-sections-instruments">
-              <h3>Инструмент</h3>
-              <a href="blank.html" class="button">на все случаи</a>
+              <h3 class="catalog-links-item-name">Инструмент</h3>
+              <a href="blank.html" class="button catalog-links-button">на все случаи</a>
             </li>
             <li class="catalog-sections-item catalog-sections-machines">
-              <h3>Техника</h3>
-              <a href="blank.html" class="button">для стройки</a>
+              <h3 class="catalog-links-item-name">Техника</h3>
+              <a href="blank.html" class="button catalog-links-button">для стройки</a>
             </li>
           </ul>
         </section>
@@ -92,42 +92,42 @@
           <div class="slider-instruments">
             <div class="slider-items">
               <article class="slider-item slider-item-perforator">
-                  <h3 class="item-name">Перфораторы</h3>
-                  <p>Настоящие мужские игрушки</p>
+                  <h3 class="slider-item-name">Перфораторы</h3>
+                  <p class="slider-item-description">Настоящие мужские игрушки</p>
                   <a href="catalog.html" class="button">Открыть каталог</a>
               </article>
               <!-- Слайдер делается как-то иначе,
               но пока что путь будет class="visually-hidden" -->
               <article class="slider-item visually-hidden slider-item-drill">
-                  <h3 class="item-name">Дрели</h3>
-                  <p>Соседям на радость!</p>
+                  <h3 class="slider-item-name">Дрели</h3>
+                  <p class="slider-item-description">Соседям на радость!</p>
                   <a href="catalog.html" class="button">Открыть каталог</a>
               </article>
             </div>
-            <button type="button" class="slider-control button-backward"><span class="visually-hidden">Назад</span></button>
-            <button type="button" class="slider-control button-forward"><span class="visually-hidden">Вперед</span></button>
+            <button type="button" class="slider-control button-backward visually-hidden"><span class="visually-hidden">Назад</span></button>
+            <button type="button" class="slider-control button-forward visually-hidden"><span class="visually-hidden">Вперед</span></button>
           </div>
         </section>
 
-        <section >
+        <section>
           <h2 class="visually-hidden">Специальные предложения</h2>
-          <ul class="special-offers">
+          <ul class="container special-offers">
             <li class="special-offers-item special-offers-discount">
-              <h3>Скидки 50%</h3>
-              <a href="blank.html" class="button">На 350 ТОВАРОВ</a>
+              <h3 class="catalog-links-item-name">Скидки 50%</h3>
+              <a href="blank.html" class="button catalog-links-button">На 350 ТОВАРОВ</a>
             </li>
             <li class="special-offers-item special-offers-delivery">
-              <h3>Доставка</h3>
-              <a href="blank.html" class="button">Бесплатно</a>
+              <h3 class="catalog-links-item-name">Доставка</h3>
+              <a href="blank.html" class="button catalog-links-button">Бесплатно</a>
             </li>
           </ul>
         </section>
       </div>
 
-      <section class="container">
+      <section class="container subsection">
         <div class="subsection-header">
           <h2 class="subsection-name">Популярные товары:</h2>
-          <a href="catalog.html" class="button">Все популярные товары</a>
+          <a href="catalog.html" class="button subsection-button">Все популярные товары</a>
         </div>
         <ul class="catalog-items-list">
           <li class="catalog-item">
@@ -172,113 +172,120 @@
         </ul>
       </section>
 
-      <section class="container">
+      <section class="container subsection">
         <div class="subsection-header">
           <h2 class="subsection-name">Популярные производители:</h2>
-          <a href="catalog.html" class="button">Все производители</a>
+          <a href="catalog.html" class="button subsection-button">Все производители</a>
         </div>
         <ul class="producers-list">
           <li>
-            <a href="blank.html" class="producer-item"><img src="img/logo-bosch.png" width="126" height="37" alt="Bosch"></a>
+            <a href="blank.html" class="producer-item"><img src="img/logo-bosch.png" width="126" height="37" alt="Bosch" class="producer-item-img"></a>
           </li>
           <li>
-            <a href="blank.html" class="producer-item"><img src="img/logo-makita.png" width="123" height="40" alt="Makita"></a>
+            <a href="blank.html" class="producer-item"><img src="img/logo-makita.png" width="123" height="40" alt="Makita" class="producer-item-img"></a>
           </li>
           <li>
-            <a href="blank.html" class="producer-item"><img src="img/logo-dewalt.png" width="146" height="44" alt="DeWALT"></a>
+            <a href="blank.html" class="producer-item"><img src="img/logo-dewalt.png" width="146" height="44" alt="DeWALT" class="producer-item-img"></a>
           </li>
           <li>
-            <a href="blank.html" class="producer-item"><img src="img/logo-interskol.png" width="200" height="88" alt="Интерскол"></a>
+            <a href="blank.html" class="producer-item"><img src="img/logo-interskol.png" width="200" height="88" alt="Интерскол" class="producer-item-img"></a>
           </li>
           <li>
-            <a href="blank.html" class="producer-item"><img src="img/logo-hitachi.png" width="169" height="31" alt="Hitachi"></a>
+            <a href="blank.html" class="producer-item"><img src="img/logo-hitachi.png" width="169" height="31" alt="Hitachi" class="producer-item-img"></a>
           </li>
           <li>
-            <a href="blank.html" class="producer-item"><img src="img/logo-lg.png" width="121" height="73" alt="LG"></a>
+            <a href="blank.html" class="producer-item"><img src="img/logo-lg.png" width="121" height="73" alt="LG" class="producer-item-img"></a>
           </li>
           <li>
-            <a href="blank.html" class="producer-item"><img src="img/logo-aeg.png" width="151" height="96" alt="AEG"></a>
+            <a href="blank.html" class="producer-item"><img src="img/logo-aeg.png" width="151" height="96" alt="AEG" class="producer-item-img"></a>
           </li>
           <li>
-            <a href="blank.html" class="producer-item"><img src="img/logo-metabo.png" width="204" height="69" alt="Metabo"></a>
+            <a href="blank.html" class="producer-item"><img src="img/logo-metabo.png" width="204" height="69" alt="Metabo" class="producer-item-img"></a>
           </li>
         </ul>
       </section>
 
       <section class="section-service-wrapper">
-        <div class="container">
+        <div class="container subsection">
           <h2 class="section-name">Сервисы</h2>
           <p class="paragraph-text">
             Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
-          <ul class="services-list">
-            <li><button type="button" class="service-tab" disabled>Доставка</button></li>
-            <li><button type="button" class="service-tab">Гарантия</button></li>
-            <li><button type="button" class="service-tab">Кредит</button></li>
-          </ul>
-          <article class="service-delivery">
-            <h3 class="subsection-name">Доставка</h3>
-            <p class="paragraph-text">
-              Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!
-            </p>
-          </article>
-          <!-- Пока что добавляю  class="visually-hidden",
-          потом разберусь его ли надо использовать для реализации этих вкладок-->
-          <article class="service-guarantee">
-            <h3 class="subsection-name">Гарантия</h3>
-            <p class="paragraph-text">
-              Если купленный у нас товар поломается или заискрит,<br>
-              а также в случае пожара, спровоцированного его<br>
-              возгоранием,  вы всегда можете быть уверены в нашей<br>
-              гарантии. Мы обменяем сгоревший товар на новый.<br>
-              Дом уж восстановите как-нибудь сами.
-            </p>
-          </article>
-          <article class="service-credit">
-            <h3 class="subsection-name">Кредит</h3>
-            <p class="paragraph-text">
-              Если купленный у нас товар поломается или заискрит,<br>
-              а также в случае пожара, спровоцированного его
-            </p>
-            <button type="button" class="button">Отправить заявку</button>
-          </article>
+          <div class="service-tabs">
+            <ul class="services-tab-list">
+              <li><button type="button" class="service-tab" disabled>Доставка</button></li>
+              <li><button type="button" class="service-tab">Гарантия</button></li>
+              <li><button type="button" class="service-tab">Кредит</button></li>
+            </ul>
+            <div class="services-items">
+              <article class="services-item service-delivery">
+                <h3 class="subsection-name">Доставка</h3>
+                <p class="paragraph-text">
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+              </article>
+              <!-- Пока что добавляю  class="visually-hidden",
+              потом разберусь его ли надо использовать для реализации этих вкладок-->
+              <article class="services-item service-guarantee visually-hidden">
+                <h3 class="subsection-name">Гарантия</h3>
+                <p class="paragraph-text">
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его<br>
+                  возгоранием,  вы всегда можете быть уверены в нашей<br>
+                  гарантии. Мы обменяем сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </article>
+              <article class="services-item service-credit visually-hidden">
+                <h3 class="subsection-name">Кредит</h3>
+                <p class="paragraph-text">
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его
+                </p>
+                <button type="button" class="button credit-button">Отправить заявку</button>
+              </article>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      <section class="container">
-        <h2 class="section-name">Компания «Техномарт»</h2>
-        <p class="paragraph-text">
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
-          ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
-          гастарбайтерах.
-        </p>
-        <p class="paragraph-text">
-          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul class="transport-companies">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="blank.html" class="button">Подробнее о компании</a>
-      </section>
+      <div class="container">
+        <section class="subsection">
+          <h2 class="section-name">Компания «Техномарт»</h2>
+          <p class="paragraph-text">
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+            ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
+            гастарбайтерах.
+          </p>
+          <p class="paragraph-text">
+            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+          <ul class="transport-companies-list">
+            <li class="transport-companies-item">Деловые линии</li>
+            <li class="transport-companies-item">Автотрейдинг</li>
+            <li class="transport-companies-item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="blank.html" class="button subsection-button">Подробнее о компании</a>
+        </section>
 
-      <section class="container">
-        <h2 class="section-name">Контакты</h2>
-        <p class="paragraph-text">
-          Вы можете забрать товар сами,<br>
-          заехав в наш офис:
-        </p>
-        <a href="">
-          <img src="img/map.png" width="300" height="158" alt="Карта с расположением офиса интернет-магазина «Техномарт» по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        </a>
-        <a href="" class="button">Заблудились? Напишите нам!</a>
-      </section>
+        <section class="subsection">
+          <h2 class="section-name">Контакты</h2>
+          <p class="paragraph-text">
+            Вы можете забрать товар сами,<br>
+            заехав в наш офис:
+          </p>
+          <a href="" class="mini-map">
+            <img src="img/map.png" width="300" height="158" alt="Карта с расположением офиса интернет-магазина «Техномарт» по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          </a>
+          <a href="" class="button subsection-button lost-button">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
 
     </main>
 
@@ -286,8 +293,8 @@
     <footer class="main-footer">
 
       <div class="container">
-        <a>
-          <img src="img/logo-technomart.svg"  class="footer-logo" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
+        <a  class="footer-logo">
+          <img src="img/logo-technomart.svg"  class="footer-logo-img" width="136.5" height="21.6" alt="Логотип интернет-магазина «Техномарт»">
         </a>
 
         <nav class="footer-site-navigation">
@@ -320,7 +327,7 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p>
+          <p class="copy-right">
             &#169; 2010–2019 Компания «Техномарт»<br>
             Все права защищены
           </p>
@@ -337,11 +344,11 @@
           <section>
             <h2 class="visually-hidden">Контакты авторов</h2>
             <ul class="contact-authours-list">
-              <li>
+              <li class="contact-authours-item">
                 Обратная связь:<br>
                 <a href="mailto:mail@htmlacademy.ru" class="contact-authours">mail@htmlacademy.ru</a>
               </li>
-              <li>
+              <li class="contact-authours-item">
                 Разработано —<br>
                 <a href="https://htmlacademy.ru/study" class="contact-authours">htmlacademy.ru</a>
               </li>
@@ -352,34 +359,36 @@
 
     </footer>
 
-    <section>
+    <section class="container container-feedback-window">
       <h2 class="visually-hidden">Обратная связь</h2>
 
       <form action="https://echo.htmlacademy.ru/" method="post" class="feedback-window">
-        <label>
-          Ваше имя:
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required autocomplete="on"  class="paragraph-text feedback-window-form">
-        </label>
-        <label>
-          Ваш e-mail:
-          <input type="email" name="email" id="email-field" placeholder="email@example.com" required autocomplete="on"  class="paragraph-text feedback-window-form">
-        </label>
-        <label>
-          Текст письма:
-          <textarea name="message" id="message-field" rows="5" placeholder="В свободной форме" required autocomplete="off"  class="paragraph-text feedback-window-form"></textarea>
-        </label>
+        <div class="feedback-window-form-main">
+          <label>
+            Ваше имя:
+            <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required autocomplete="on"  class="paragraph-text feedback-window-form">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input type="email" name="email" id="email-field" placeholder="email@example.com" required autocomplete="on"  class="paragraph-text feedback-window-form">
+          </label>
+          <label>
+            Текст письма:
+            <textarea name="message" id="message-field" rows="5" placeholder="В свободной форме" required autocomplete="off"  class="paragraph-text feedback-window-form"></textarea>
+          </label>
+        </div>
         <div class="feedback-window-footer">
-          <input type="submit" value="Оформить заказ" class="button">
+          <input type="submit" value="Оформить заказ" class="button feedback-window-submit">
         </div>
       </form>
       <button type="button" class="close-button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
-    <section class="visually-hidden">
+    <section class="container container-map-window">
       <h2 class="visually-hidden">Карта</h2>
       <!-- Пусть пока что будет как-то так -->
       <iframe  class="map-window" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.200761944884!2d30.316567!3d59.938773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1590362589342!5m2!1sru!2sru"
-       width="943" height="449"></iframe>
+       width="940" height="449"></iframe>
       <button type="button" class="close-button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
