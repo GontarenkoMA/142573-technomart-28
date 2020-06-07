@@ -262,7 +262,6 @@ img {
 }
 .products-interaction-item {
   width: 150px;
-  height: inherit;
   box-sizing: border-box;
   display: flex;
 }
@@ -333,7 +332,7 @@ img {
   border-width: 3px;
   border-color: var(--basic-white);
   display: block;
-  width: 270px;
+  min-width: 270px;
   height: 45px;
   box-sizing: border-box;
 }
@@ -562,8 +561,8 @@ img {
   color: var(--basic-white);
   border-radius: 50%;
   background-color: var(--socialwebs);
-  height: 40px;
-  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
   margin: 0;
   display: block;
   background-repeat: no-repeat;
@@ -687,7 +686,7 @@ margin-top: 20px;
   margin: 0;
 }
 .slider-item{
-  height: 266px;
+  min-height: 266px;
   width: 620px;
   padding: 23px 20px 27px 24px;
   box-sizing: border-box;
@@ -1030,7 +1029,7 @@ textarea.feedback-window-form {
   background-repeat: no-repeat;
   background-position: center;
   height: 20.97px;
-  width: 20.97px;
+  min-width: 20.97px;
 }
 .continue-shopping-button,
 .continue-shopping-button:hover,
@@ -1097,8 +1096,8 @@ textarea.feedback-window-form {
 .breadcrumbs-navigation-home {
   background-image: url("../img/icon-home.svg");
   display: block;
-  height: 12px;
-  width: 14px;
+  min-height: 12px;
+  min-width: 14px;
   padding-left: 0;
 }
 .catalog-section-name {
@@ -1284,11 +1283,15 @@ textarea.feedback-window-form {
   border: 1px solid var(--catalogbuttons);
   text-align: center;
   display: block;
+  box-sizing: border-box;
   height: 38px;
   min-width: 38px;
   margin: 0;
   padding: 0 5px;
-  box-sizing: border-box;
+}
+.submit-filter {
+  min-height: 38px;
+  flex-grow: 0;
 }
 .page-number{
   margin-right: 10px;
