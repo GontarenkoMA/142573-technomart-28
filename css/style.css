@@ -485,9 +485,9 @@ img {
   flex-wrap: wrap;
   justify-content: flex-end;
   max-width: 700px;
+  column-gap: 58px;
 }
 .footer-site-navigation-item {
-  margin-left: 58px;
   padding-top: 7px;
   padding-bottom: 7px;
 }
@@ -504,9 +504,9 @@ img {
   flex-wrap: wrap;
   justify-content: flex-end;
   max-width: 600px;
+  column-gap: 58px;
 }
 .footer-catalog-navigation-item {
-  margin-left: 58px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -1304,6 +1304,7 @@ textarea.feedback-window-form {
   display: flex;
   margin: 0;
   margin-top: 48px;
+  column-gap: 10px;
 }
 .page-number,
 .submit-filter {
@@ -1328,7 +1329,6 @@ textarea.feedback-window-form {
   cursor: pointer;
 }
 .page-number{
-  margin-right: 10px;
   border-radius: 2px;
 }
 .page-number:focus,
