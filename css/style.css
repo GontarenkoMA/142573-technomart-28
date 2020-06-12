@@ -1126,8 +1126,9 @@ textarea.feedback-window-form {
   width: 220px;
 }
 .sorting-container,
+.sorting-title,
 .filter-wrapper,
-.sorting-wrapper {
+.filter-title {
   background-color: var(--basic-creamdark);
   border-radius: 2px;
   font-family: "Ptsans", Arial, sans-serif;
@@ -1141,7 +1142,7 @@ textarea.feedback-window-form {
   padding: 10px 18px;
   box-sizing: border-box;
 }
-.sorting-wrapper {
+.sorting-title {
   margin: 0;
 }
 .sorting-container {
@@ -1219,7 +1220,8 @@ textarea.feedback-window-form {
  display: flex;
  margin: 10px;
 }
-.filter-parameter-item {
+.filter-parameter-item,
+.sorting-parameter-item {
   margin: 0;
   padding: 0;
 }
