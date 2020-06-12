@@ -404,20 +404,23 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .header-site-navigation-list-item {
   flex-grow: 1;
   margin: 0;
   display: flex;
 }
-/* For Maria: Тут еще надо сделать так,
-что бы расстояние от текста до краев было правильное между элементами и у краев бокса */
 .header-site-navigation-item {
   color: var(--basic-white);
   font-size: 18px;
   line-height: 24px;
   padding-top: 16px;
   padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   flex-grow: 1;
   display: block;
   text-align: center;
@@ -468,41 +471,55 @@ img {
 .footer-phone {
   color: var(--basic-asphaltlight);
 }
-.footer-site-navigation-items {
-  list-style: none;
-  padding: 0;
-  margin-top: 37px;
-  margin-bottom: 7px;
-  display: flex;
-  justify-content: flex-end;
-}
 .footer-site-navigation {
   min-width: 720px;
 }
+.footer-site-navigation-items {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 700px;
+}
 .footer-site-navigation-item {
-  color: var(--basic-asphaltlight);
   margin-left: 58px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.footer-site-navigation-item-text {
+  color: var(--basic-asphaltlight);
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 .footer-catalog-navigation {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 5px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
+  max-width: 600px;
 }
 .footer-catalog-navigation-item {
-  color: var(--basic-yellowlight);
   margin-left: 58px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.footer-site-navigation-item:focus,
-.footer-site-navigation-item:hover,
-.footer-catalog-navigation-item:focus,
-.footer-catalog-navigation-item:hover{
+.footer-catalog-navigation-item-text {
+  color: var(--basic-yellowlight);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer-site-navigation-item-text:focus,
+.footer-site-navigation-item-text:hover,
+.footer-catalog-navigation-item-text:focus,
+.footer-catalog-navigation-item-text:hover{
   text-decoration: underline;
 }
-.footer-site-navigation-item:active,
-.footer-catalog-navigation-item:active {
+.footer-site-navigation-item-text:active,
+.footer-catalog-navigation-item-text:active {
   text-decoration: none;
   opacity: var(--alpha-50);
   list-style: none;
