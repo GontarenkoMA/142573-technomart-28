@@ -271,8 +271,10 @@ img {
 .products-interaction-item-text {
   background-repeat: no-repeat;
   color: var(--basic-white);
-  margin-top: auto;
-  margin-bottom: auto;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  display: block;
+  width: 100%;
 }
 .products-interaction-item-text:active{
   opacity: var(--alpha-50);
@@ -286,7 +288,7 @@ img {
   padding-left: 35px;
 }
 .products-interaction-item-order .products-interaction-item-text {
-  margin: auto;
+  text-align: center;
 }
 .products-interaction-item-order {
   background-color: var(--basic-green);
