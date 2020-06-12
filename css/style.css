@@ -758,9 +758,9 @@ margin-top: 20px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   row-gap: 20px;
+  column-gap: 20px;
 }
 .catalog-item,
 .producer-item {
@@ -778,6 +778,7 @@ margin-top: 20px;
   flex-grow: 0;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 .producer-item {
   min-height: 145px;
