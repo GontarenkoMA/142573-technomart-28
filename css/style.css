@@ -765,10 +765,6 @@ margin-top: 20px;
 .catalog-section-name {
   color: var(--basic-asphaltsemilight);
 }
-
-.subsection-button {
-  min-width: 192px;
-}
 .catalog-items-list,
 .producers-list {
   list-style: none;
