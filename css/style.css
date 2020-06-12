@@ -1026,7 +1026,8 @@ textarea.feedback-window-form {
   margin: 0;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 10px;
 }
 .feedback-window-submit {
   flex-grow: 1;
@@ -1089,8 +1090,7 @@ textarea.feedback-window-form {
 .adding-window-footer {
   background-color: var(--addedfooter);
   list-style: none;
-  padding-left: 114px;
-  padding-right: 112px;
+  padding-left: 82px;
 }
 
 /* catalog */
