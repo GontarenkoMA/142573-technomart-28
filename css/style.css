@@ -154,6 +154,7 @@ img {
   min-height: 38px;
   display: block;
   min-width: 192px;
+  cursor: pointer;
 }
 .button:active {
   background-color: var(--basic-a-reddark);
@@ -718,6 +719,7 @@ margin-top: 20px;
   width: 22px;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 .slider-item-drill{
   background-image: url("../img/slider-drill.jpg");
@@ -902,7 +904,8 @@ margin-top: 20px;
   box-sizing: border-box;
   border-top: 1px solid var(--servicetabtop);
   border-bottom: 1px solid var(--basic-asphalt);
-}
+  cursor: pointer;
+  }
 .service-tab:hover,
 .service-tab:focus {
   background-color: var(--basic-asphalt);
@@ -912,6 +915,7 @@ margin-top: 20px;
   color: var(--basic-asphaltsemilight);
   background-color: var(--basic-white);
   border: none;
+  cursor: default;
 }
 .services-items {
   display: flex;
@@ -1034,10 +1038,11 @@ textarea.feedback-window-form {
   border-top: 7px solid var(--basic-red);
   text-align: center;
 }
+
 .close-button,
 .close-button:hover,
 .close-button:focus,
-.close-button:active{
+.close-button:active {
   background-image: url("../img/icon-close.svg");
   background-color: transparent;
   border: none;
@@ -1046,6 +1051,7 @@ textarea.feedback-window-form {
   background-position: center;
   height: 20.97px;
   min-width: 20.97px;
+  cursor: pointer;
 }
 .continue-shopping-button,
 .continue-shopping-button:hover,
@@ -1174,6 +1180,7 @@ textarea.feedback-window-form {
   opacity: var(--alpha-30);
   border: none;
   border-bottom: 1px dotted var(--basic-red);
+  cursor: pointer;
 }
 .sorting-parameter:focus,
 .sorting-parameter:hover {
@@ -1187,6 +1194,9 @@ textarea.feedback-window-form {
   opacity: 1;
   border-bottom: none;
 }
+.sorting-parameter:disabled {
+  cursor: default;
+}
 /* Для того, чтобы сделать иконци-треугольнички */
 
 .showing-parameter,
@@ -1194,6 +1204,9 @@ textarea.feedback-window-form {
 .showing-parameter:hover,
 .showing-parameter:disabled {
   border: none;
+}
+.showing-parameter:disabled {
+  cursor: default;
 }
 .go-up {
 }
@@ -1239,6 +1252,7 @@ textarea.feedback-window-form {
   background-color: transparent;
   border: none;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 /* Без понятия, что это за фигня, пусть, пока что будет так */
 .range-line-background{
@@ -1278,6 +1292,7 @@ textarea.feedback-window-form {
   padding-left: 35px;
   margin-top: 20px;
   display: block;
+  cursor: pointer;
 }
 .filter-by-power-item {
 }
@@ -1310,6 +1325,7 @@ textarea.feedback-window-form {
 .submit-filter {
   min-height: 38px;
   flex-grow: 0;
+  cursor: pointer;
 }
 .page-number{
   margin-right: 10px;
