@@ -653,13 +653,13 @@ margin-top: 20px;
 .special-offers .button:active {
   background-color: rgba(var(--rgb-grey), var(--alpha-30));
 }
-.catalog-sections-item ,
+.catalog-sections-item,
 .special-offers-item {
   min-height: 123px;
   width: 300px;
   display: block;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   box-sizing: border-box;
   padding: 20px 0 21px 23px;
   flex-grow: 0;
@@ -667,22 +667,27 @@ margin-top: 20px;
 .catalog-sections-materials {
   background-color: var(--special-yellowdark);
   background-image: url("../img/pic-paint.svg");
+  background-position-x: 213px;
 }
 .catalog-sections-instruments {
   background-color: var(--special-blue);
   background-image: url("../img/pic-drill.svg");
+  background-position-x: 194px;
 }
 .catalog-sections-machines {
   background-color: var(--special-lilac);
   background-image: url("../img/pic-tractor.svg");
+  background-position-x: 191px;
 }
 .special-offers-discount {
   background-color: var(--special-greenlight);
   background-image: url("../img/pic-cart.svg");
+  background-position-x: 196px;
 }
 .special-offers-delivery {
   background-color: var(--special-yellow);
   background-image: url("../img/pic-truck.svg");
+  background-position-x: 191px;
 }
 .slider-instruments{
   background-color: var(--special-asphaltsemilight);
