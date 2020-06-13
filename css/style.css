@@ -110,6 +110,7 @@
   --alpha-30: 0.3;
   --alpha-50: 0.5;
 }
+
 /* Common */
 body {
   min-width: 960px;
@@ -129,10 +130,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-.page-body address{
+.page-body address {
   font-style: normal;
 }
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -162,12 +163,11 @@ img {
 .button:active {
   background-color: var(--basic-a-reddark);
 }
-.paragraph-text{
+.paragraph-text {
   font-family: "Ptsans", Arial, sans-serif;
   margin: 0;
   margin-top: 24px;
 }
-
 
 /* Grid */
 .page {
@@ -181,7 +181,6 @@ img {
 }
 
 /* Container */
-
 .container {
   width: 940px;
   margin: 0 auto;
@@ -190,6 +189,7 @@ img {
   box-sizing: border-box;
   justify-content: space-between;
 }
+
 /* Header */
 .main-header {
   background-color: var(--basic-asphaltlight);
@@ -222,7 +222,7 @@ img {
   width: 220px;
   height: 47px;
 }
-.header-logo-img{
+.header-logo-img {
   display: block;
   margin: auto;
   width: 108px;
@@ -231,8 +231,6 @@ img {
 .header-logo:active {
   background-color: var(--basic-a-reddark);
 }
-/*Тут и далее пока что не знаю наверняка, что надо делать с иконками,
-чтобы их оживить, но подключу, пусть хоть как-то будут*/
 .header-search-form {
   flex-grow: 1;
 }
@@ -258,18 +256,18 @@ img {
 .header-search-field:invalid {
   box-shadow: none;
 }
-input[type="search"]::-webkit-input-placeholder { opacity: 1; }
-input[type="search"]:-ms-input-placeholder { opacity: 1; }
-input[type="search"]::-ms-input-placeholder { opacity: 1; }
-input[type="search"]::placeholder { opacity: 1; }
+input[type="search"]::-webkit-input-placeholder { opacity: 1;}
+input[type="search"]:-ms-input-placeholder { opacity: 1;}
+input[type="search"]::-ms-input-placeholder { opacity: 1;}
+input[type="search"]::placeholder { opacity: 1;}
 input[type="search"]:active::-webkit-input-placeholder,
-input[type="search"]:focus::-webkit-input-placeholder { opacity: var(--alpha-30); }
+input[type="search"]:focus::-webkit-input-placeholder { opacity: var(--alpha-30);}
 input[type="search"]:active:-ms-input-placeholder,
-input[type="search"]:focus:-ms-input-placeholder { opacity: var(--alpha-30); }
+input[type="search"]:focus:-ms-input-placeholder { opacity: var(--alpha-30);}
 input[type="search"]:active::-ms-input-placeholder,
-input[type="search"]:focus::-ms-input-placeholder { opacity: var(--alpha-30); }
+input[type="search"]:focus::-ms-input-placeholder { opacity: var(--alpha-30);}
 input[type="search"]:active::placeholder,
-input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
+input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
 .header-search-field:active,
 .header-search-field:focus {
   background-color: var(--basic-white);
@@ -328,7 +326,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
   display: block;
   width: 100%;
 }
-.products-interaction-item-text:active{
+.products-interaction-item-text:active {
   opacity: var(--alpha-50);
 }
 .products-interaction-notempty {
@@ -469,18 +467,6 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
 .user-navigation-log:active path {
   fill: var(--basic-greylight);
 }
-/* Пока что не знаю точно, как сделать икони,
-которые бы реагировали на взаимодействие
-.logout {
-  background-image: url("../img/icon-logout.svg");
-  height: 17px;
-  width: 19.91px;
-}
-.login {
-  background-image: url("../img/icon-login.svg");
-  height: 17px;
-  width: 19.91px;
-}*/
 .user-navigation-log:hover,
 .user-navigation-log:focus {
   color: var(--basic-red);
@@ -511,7 +497,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
   margin-right: 14px;
 }
 .user-navigation-inside:hover,
-.user-navigation-inside:focus{
+.user-navigation-inside:focus {
   color: var(--basic-red);
 }
 .user-navigation-inside:active {
@@ -642,7 +628,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
 .footer-site-navigation-item-text:focus,
 .footer-site-navigation-item-text:hover,
 .footer-catalog-navigation-item-text:focus,
-.footer-catalog-navigation-item-text:hover{
+.footer-catalog-navigation-item-text:hover {
   text-decoration: underline;
 }
 .footer-site-navigation-item-text:active,
@@ -717,20 +703,18 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
 .socialwebs:active {
   background-color: var(--basic-red);
 }
-.socialwebs-vk{
+.socialwebs-vk {
   background-image: url("../img/icon-vk.svg");
 }
-.socialwebs-fb{
+.socialwebs-fb {
   background-image: url("../img/icon-fb.svg");
 }
-.socialwebs-ig{
+.socialwebs-ig {
   background-image: url("../img/icon-insta.svg");
 }
 
 /* Index */
-
-
-.catalog-links{
+.catalog-links {
   margin-top: 59px;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -816,7 +800,7 @@ margin-top: 20px;
   background-image: url("../img/pic-truck.svg");
   background-position-x: 191px;
 }
-.slider-instruments{
+.slider-instruments {
   background-color: var(--special-asphaltsemilight);
   color: var(--basic-white);
   font-size: 18px;
@@ -826,12 +810,12 @@ margin-top: 20px;
   margin-bottom: 59px;
   position: relative;
 }
-.slider-items{
+.slider-items {
   min-height: 266px;
   width: 620px;
   background-color: var(--special-asphalt);
 }
-.slider-item-name{
+.slider-item-name {
   font-size: 36px;
   line-height: 36px;
   margin: 0;
@@ -890,19 +874,19 @@ margin-top: 20px;
 .slider-control-dot:disabled {
   background-color: var(--basic-red);
 }
-.slider-item-drill{
+.slider-item-drill {
   background-image: url("../img/slider-drill.jpg");
   background-repeat: no-repeat;
 }
-.slider-item-perforator{
+.slider-item-perforator {
   background-image: url("../img/slider-perforator.jpg");
   background-repeat: no-repeat;
 }
-.slider-control-button-forward{
+.slider-control-button-forward {
   background-image: url("../img/icon-left.svg");
   transform: rotate(180deg);
 }
-.slider-control-button-backward{
+.slider-control-button-backward {
   background-image: url("../img/icon-left.svg");
 }
 .slider-control-button {
@@ -1088,8 +1072,6 @@ margin-top: 20px;
   top: 0;
   right: -19px;
 }
-
-
 .catalog-item-buttons {
   background-color: var(--basic-white);
   list-style: none;
@@ -1189,7 +1171,7 @@ margin-top: 20px;
   border-top: 1px solid var(--servicetabtop);
   border-bottom: 1px solid var(--basic-asphalt);
   cursor: pointer;
-  }
+ }
 .service-tab:hover,
 .service-tab:focus {
   background-color: var(--basic-asphalt);
@@ -1380,8 +1362,9 @@ margin-top: 20px;
 .modal-close::after {
   transform: rotate(-45deg);
 }
+
 /* Index feedback window */
-.feedback-window{
+.feedback-window {
   text-align: left;
   font-size: 18px;
   line-height: 24px;
@@ -1416,6 +1399,7 @@ textarea.feedback-window-form {
 .feedback-window-submit {
   flex-grow: 1;
 }
+
 /* Index map window */
 .container-map-window {
   height: 449px;
@@ -1627,11 +1611,11 @@ textarea.feedback-window-form {
   text-transform: uppercase;
   margin-top: 18px;
   display: block;
- }
+}
 .filter-parameter:first-of-type {
   margin-top: 10px;
 }
-.filter-parameter-list{
+.filter-parameter-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1662,7 +1646,7 @@ textarea.feedback-window-form {
   display: flex;
   justify-content: space-between;
 }
-.price-range-control{
+.price-range-control {
   width: 20px;
   height: 20px;
   box-sizing: border-box;
@@ -1705,7 +1689,7 @@ textarea.feedback-window-form {
   height: 2px;
   width: 152px;
 }
-.price-number-input{
+.price-number-input {
   color: var(--basic-black);
   font-size: 17px;
   line-height: 18px;
@@ -1823,7 +1807,7 @@ textarea.feedback-window-form {
 }
 
 /* Pagination */
-.pagination-list{
+.pagination-list {
   list-style: none;
   padding: 0;
   display: flex;
@@ -1853,7 +1837,7 @@ textarea.feedback-window-form {
   flex-grow: 0;
   cursor: pointer;
 }
-.page-number{
+.page-number {
   border-radius: 2px;
 }
 .page-number:focus,
