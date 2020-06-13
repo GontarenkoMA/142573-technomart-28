@@ -150,6 +150,8 @@ img {
   background-color: var(--basic-red);
   border: none;
   padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 8px;  
   min-height: 38px;
   display: block;
   min-width: 192px;
