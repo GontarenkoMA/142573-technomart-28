@@ -1361,6 +1361,8 @@ textarea.feedback-window-form {
   font-family: "Ptsans", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+  margin-top: 10px;
 }
 .filter-by-producer-item,
 .filter-by-power-item {
