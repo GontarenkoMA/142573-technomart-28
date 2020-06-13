@@ -1032,7 +1032,16 @@ margin-top: 20px;
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
-  padding-left: 38px;
+}
+.transport-companies-item:before {
+  content: "";
+  display: inline-block;
+  background-color: var(--basic-red);
+  height: 2px;
+  width: 25px;
+  margin: 0;
+  margin-bottom: 4px;
+  margin-right: 12px;
 }
 .mini-map {
   display: block;
