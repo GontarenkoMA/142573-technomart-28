@@ -151,7 +151,7 @@ img {
   border: none;
   padding: 10px;
   padding-top: 12px;
-  padding-bottom: 8px;  
+  padding-bottom: 8px;
   min-height: 38px;
   display: block;
   min-width: 192px;
@@ -433,16 +433,15 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
   background-position: center;
   min-height: 45px;
   min-width: 121px;
-  padding: 0 24px;
+  padding: 12px 24px 8px;
   display: inline-block;
-  line-height: 45px;
   margin: 10px;
   text-align: center;
   box-sizing: border-box;
   margin: 0;
 }
 .user-navigation-log-login {
-    margin-left: 6px;
+  margin-left: 6px;
 }
 .user-navigation-log-username {
   margin: 0 20px;
@@ -455,6 +454,11 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
 .logout {
   padding-left: 15px;
   padding-right: 17px;
+}
+.user-navigation-log svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
 }
 .user-navigation-log:hover path,
 .user-navigation-log:focus path {
