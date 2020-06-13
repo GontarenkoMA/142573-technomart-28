@@ -886,7 +886,7 @@ margin-top: 20px;
   flex-grow: 0;
   flex-shrink: 0;
 }
-.slider-control-dot-current {
+.slider-control-dot:disabled {
   background-color: var(--basic-red);
 }
 .slider-item-drill{
