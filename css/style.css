@@ -1167,6 +1167,7 @@ margin-top: 20px;
 }
 .service-tabs {
   display: flex;
+  position: relative;
 }
 .services-tab-list {
   list-style: none;
@@ -1204,10 +1205,24 @@ margin-top: 20px;
   border: none;
   cursor: default;
 }
+.service-tabs-shadow {
+  display: block;
+  position: absolute;
+  height: 280px;
+  width: 200px;
+  left: 240px;
+  top: 20px;
+  border-radius: 10px/100px;
+  box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
 .services-items {
   display: flex;
   width: 700px;
-  margin-top: 21px;
+  padding-top: 21px;
+  z-index: 3;
+  position: relative;
+  background-color: var(--basic-asphaltlight);
 }
 .services-item {
   background-repeat: no-repeat;
