@@ -130,9 +130,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-.page-body address {
-  font-style: normal;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -580,6 +577,10 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
 }
 .footer-logo:active {
   background-color: var(--basic-a-reddark);
+}
+.footer-address,
+.header-address {
+  font-style: normal;
 }
 .footer-phone {
   color: var(--basic-asphaltlight);
