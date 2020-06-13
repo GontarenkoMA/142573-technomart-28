@@ -390,8 +390,8 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
   line-height: 24px;
   display: block;
   width: 270px;
-  margin-left: 90px;
-  margin-right: 69px;
+  margin-left: auto;
+  margin-right: 10px;
 }
 .header-phone {
   color: var(--basic-red);
@@ -412,10 +412,10 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: auto;
-  display: block;
-  max-width: 300px;
-
+  display: flex;
+  justify-content: center;
+  width: 340px;
+  flex-wrap: wrap;
 }
 .user-navigation-log {
   color: var(--basic-black);
@@ -423,10 +423,37 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
   background-repeat: no-repeat;
   background-position: center;
   min-height: 45px;
+  min-width: 121px;
+  padding: 0 24px;
   display: inline-block;
   line-height: 45px;
   margin: 10px;
   text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+.user-navigation-log-login {
+    margin-left: 6px;
+}
+.user-navigation-log-username {
+  margin: 0 20px;
+}
+.login {
+  padding-left: 19px;
+  margin-right: 10px;
+  margin-left: auto;
+}
+.logout {
+  padding-left: 15px;
+  padding-right: 17px;
+}
+.user-navigation-log:hover path,
+.user-navigation-log:focus path {
+  fill: var(--special-asphalt);
+}
+.user-navigation-log path,
+.user-navigation-log:active path {
+  fill: var(--basic-greylight);
 }
 /* Пока что не знаю точно, как сделать икони,
 которые бы реагировали на взаимодействие
@@ -447,11 +474,27 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
 .user-navigation-log:active {
   color: var(--basic-greylight);
 }
-.user-navigation-inside{
+.user-navigation-inside {
   color: var(--basic-asphaltsemilight);
   background-color: transparent;
   font-size: 16px;
   line-height: 18px;
+  margin-top: 7px;
+}
+
+.user-navigation-inside-item:not(:first-of-type) {
+  margin-left: 14px;
+}
+.user-navigation-inside-item:last-of-type:before {
+  content: "";
+  display: inline-block;
+  background-color: var(--basic-asphaltsemilight);
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  margin: 0;
+  margin-bottom: 2.5px;
+  margin-right: 14px;
 }
 .user-navigation-inside:hover,
 .user-navigation-inside:focus{
