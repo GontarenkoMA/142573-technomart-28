@@ -327,6 +327,12 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30); }
 .products-interaction-item-text:active{
   opacity: var(--alpha-50);
 }
+.products-interaction-notempty {
+  background-color: var(--basic-red);
+}
+.products-interaction-notempty:active {
+  background-color: var(--basic-a-reddark);
+}
 .products-interaction-item-bookmarks {
   padding-left: 20px;
 }
