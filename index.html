@@ -101,21 +101,24 @@
           <h2 class="visually-hidden">Подразделы раздела каталога "Инструменты"</h2>
           <div class="slider-instruments">
             <div class="slider-items">
-              <article class="slider-item slider-item-perforator">
+              <article class="slider-item slider-item-perforator slider-item-current">
                   <h3 class="slider-item-name">Перфораторы</h3>
                   <p class="slider-item-description">Настоящие мужские игрушки</p>
-                  <a href="catalog.html" class="button">Открыть каталог</a>
+                  <a href="catalog.html" class="button slider-item-link">Открыть каталог</a>
               </article>
-              <!-- Слайдер делается как-то иначе,
-              но пока что путь будет class="visually-hidden" -->
-              <article class="slider-item visually-hidden slider-item-drill">
+              <article class="slider-item slider-item-drill">
                   <h3 class="slider-item-name">Дрели</h3>
                   <p class="slider-item-description">Соседям на радость!</p>
-                  <a href="catalog.html" class="button">Открыть каталог</a>
+                  <a href="catalog.html" class="button slider-item-link">Открыть каталог</a>
               </article>
             </div>
-            <button type="button" class="slider-control button-backward visually-hidden"><span class="visually-hidden">Назад</span></button>
-            <button type="button" class="slider-control button-forward visually-hidden"><span class="visually-hidden">Вперед</span></button>
+            <div class="slider-control-buttons">
+              <button type="button" class="slider-control-button slider-control-button-backward"><span class="visually-hidden">Назад</span></button>
+              <button type="button" class="slider-control-button slider-control-button-forward"><span class="visually-hidden">Вперед</span></button>
+            </div>
+            <div class="slider-control-dots">
+              <button type="button" class="slider-control-dot" aria-label="Первый слайд"></button><button type="button" class="slider-control-dot slider-control-dot-current" aria-label="Второй слайд"></button>
+            </div>
           </div>
         </section>
 
@@ -152,7 +155,7 @@
             <del class="old-price">32500 р.</del>
             <ins class="actual-price">25500 р.</ins>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-new">
             <ul class="catalog-item-buttons">
               <li><button type="button" class="button add-to-cart">Купить</button></li>
               <li><button type="button" class="button add-to-bookmarks">В закладки</button></li>
@@ -176,7 +179,7 @@
             <del class="old-price">30500 р.</del>
             <ins class="actual-price">25500 р.</ins>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-new">
             <ul class="catalog-item-buttons">
               <li><button type="button" class="button add-to-cart">Купить</button></li>
               <li><button type="button" class="button add-to-bookmarks">В закладки</button></li>
