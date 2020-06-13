@@ -150,8 +150,8 @@ img {
   background-color: var(--basic-red);
   border: none;
   padding: 10px;
-  padding-top: 12px;
-  padding-bottom: 8px;
+  padding-top: 11px;
+  padding-bottom: 9px;
   min-height: 38px;
   display: block;
   min-width: 192px;
@@ -1283,7 +1283,8 @@ margin-top: 20px;
   margin: 32px 0 25px;
 }
 .lost-button {
-  padding: 0 34px;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 /* Index feedback window */
 .container-feedback-window,
