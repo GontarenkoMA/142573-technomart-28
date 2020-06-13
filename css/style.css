@@ -106,6 +106,7 @@
   --pricedash: #444444;               /*тире между полями ввода формы цены*/
   --catalogbuttons: #E5E5E5;          /*границы кнопок "Показать" и навигации страниц в каталоге*/
   --servicetabtop: #405069;          /*верхняя граница кнопки-вкладки в разделе Сервисы*/
+  --pricerangecontrol: #ABABAB;          /*кружочек в слайдере цены*/
   --alpha-30: 0.3;
   --alpha-50: 0.5;
 }
@@ -1470,7 +1471,7 @@ textarea.feedback-window-form {
   border: none;
   margin: 0;
   margin-bottom: 8px;
-  padding: 10px 18px;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 .sorting-title {
@@ -1567,30 +1568,48 @@ textarea.feedback-window-form {
   display: flex;
   justify-content: space-between;
 }
-.price-gange-input{
-  background-image: url("../img/filter-button.svg");
-  display: block;
-  height: 22px;
+.price-range-control{
   width: 20px;
-  background-color: transparent;
-  border: none;
-  background-repeat: no-repeat;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--pricerangecontrol);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 0;
 }
-/* Без понятия, что это за фигня, пусть, пока что будет так */
-.range-line-background{
+.price-range-control-min {
+  left: 18px;
+}
+.price-range-control-max {
+  left: 162px;
+}
+.price-number-input[type="number"]::-webkit-outer-spin-button,
+.price-number-input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.price-number-input[type="number"] {
+  -moz-appearance: textfield;
+}
+.price-range-wrapper {
+  height: 80px;
+  padding-top: 39px;
+  position: relative;
+}
+.range-line-background {
   background-color: var(--pricerangebg);
-  display: block;
   height: 2px;
-  width: 180px;
-  border: none;
+  position: relative;
 }
-.range-line{
+.range-line {
   background-color: var(--pricerange);
-  display: block;
   height: 2px;
   width: 152px;
-  border: none;
 }
 .price-number-input{
   color: var(--basic-black);

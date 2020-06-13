@@ -103,12 +103,19 @@
             <form action="https://echo.htmlacademy.ru/" method="get" oninput="priceoutput.value=price.value" class="filter-section-form">
               <fieldset class="filter-section">
                 <legend class="filter-parameter">Цена:</legend>
-                <div class="filter-wrapper">
-                  <button type="button" class="price-gange-input"><span class="visually-hidden">Изменить нижнюю границу диапазона цены</span></button>
-                  <div class="range-line-background"><div class="range-line"></div></div>
-                  <button type="button" class="price-gange-input"><span class="visually-hidden">Изменить верхнюю границу диапазона цены</span></button>
+                <div class="filter-wrapper price-range-wrapper">
+                  <div class="range-line-background">
+                    <div class="range-line"></div>
+                  </div>
+                  <button type="button" class="price-range-control price-range-control-min"><span class="visually-hidden">Изменить нижнюю границу диапазона цены</span></button>
+                  <button type="button" class="price-range-control price-range-control-max"><span class="visually-hidden">Изменить верхнюю границу диапазона цены</span></button>
                 </div>
-                <!-- Пусть пока тут полежат
+                <!-- Ну хз, все равно не хочу с ними расставаться.
+                Все-таки не правильно не давать пользователю отправить форму со значением больше или меньше допустимого.
+                Он должен иметь возможность это сделать, т.к. изменив дефолтные значения без перезагрузки страницы он уже не будет знать,
+                что есть максимум, и ему сидеть и угадывать что ли?
+                Поэтому эти ограничители обязаны тут быть, а вот атрибутов min="0" и max="35000" в инпутах ни в коем случае быть не должно.
+                У меня рука не поднимается совсем их убрать.
                 <input type="hidden" name="price-min" id="filter-price-min" value="0">
                 <input type="hidden" name="price-max" id="filter-price-max" value="35000">
                 -->
