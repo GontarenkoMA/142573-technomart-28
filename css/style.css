@@ -1179,20 +1179,28 @@ textarea.feedback-window-form {
   font-size: 13px;
   line-height: 18px;
 }
+.breadcrumbs-navigation-item:not(:first-of-type) {
+  background-image: url("../img/icon-right-small.svg");
+  background-position: 17px center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
 .breadcrumbs-navigation-item-content {
   color: var(--basic-black);
   font-size: 13px;
   line-height: 18px;
   font-family: "Ptsans", Arial, sans-serif;
   text-transform: uppercase;
-  padding-left: 41px;
 }
 .breadcrumbs-navigation-home {
   background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
   display: block;
   min-height: 12px;
   min-width: 14px;
   padding-left: 0;
+  background-position: center;
+  min-height: 18px;
 }
 .catalog-section-name {
   background-color: var(--basic-asphaltxlight);
