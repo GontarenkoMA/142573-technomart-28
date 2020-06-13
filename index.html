@@ -378,37 +378,43 @@
 
     </footer>
 
-    <section class="container container-feedback-window">
-      <h2 class="visually-hidden">Обратная связь</h2>
+    <section class="modal-container visually-hidden">
+      <div class="container modal container-feedback-window">
+        <h2 class="visually-hidden">Обратная связь</h2>
 
-      <form action="https://echo.htmlacademy.ru/" method="post" class="feedback-window">
-        <div class="feedback-window-form-main">
-          <label>
-            Ваше имя:
-            <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required autocomplete="on"  class="paragraph-text feedback-window-form">
-          </label>
-          <label>
-            Ваш e-mail:
-            <input type="email" name="email" id="email-field" placeholder="email@example.com" required autocomplete="on"  class="paragraph-text feedback-window-form">
-          </label>
-          <label>
-            Текст письма:
-            <textarea name="message" id="message-field" rows="5" placeholder="В свободной форме" required autocomplete="off"  class="paragraph-text feedback-window-form"></textarea>
-          </label>
-        </div>
-        <div class="feedback-window-footer">
-          <input type="submit" value="Оформить заказ" class="button feedback-window-submit">
-        </div>
-      </form>
-      <button type="button" class="close-button"><span class="visually-hidden">Закрыть</span></button>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="feedback-window">
+          <div class="feedback-window-form-main">
+            <label>
+              Ваше имя:
+              <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required autocomplete="on"  class="paragraph-text feedback-window-form">
+            </label>
+            <label>
+              Ваш e-mail:
+              <input type="email" name="email" id="email-field" placeholder="email@example.com" required autocomplete="on"  class="paragraph-text feedback-window-form">
+            </label>
+            <label>
+              Текст письма:
+              <textarea name="message" id="message-field" rows="5" placeholder="В свободной форме" required autocomplete="off"  class="paragraph-text feedback-window-form"></textarea>
+            </label>
+          </div>
+          <div class="modal-footer">
+            <input type="submit" value="Оформить заказ" class="button feedback-window-submit">
+          </div>
+        </form>
+        <button type="button" class="modal-close" aria-label="Закрыть"></button>
+      </div>
+      <button type="button" class="modal-close-background" aria-label="Закрыть"></button>
     </section>
 
-    <section class="container container-map-window">
-      <h2 class="visually-hidden">Карта</h2>
-      <!-- Пусть пока что будет как-то так -->
-      <iframe  class="map-window" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.200761944884!2d30.316567!3d59.938773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1590362589342!5m2!1sru!2sru"
-       width="940" height="449"></iframe>
-      <button type="button" class="close-button"><span class="visually-hidden">Закрыть</span></button>
+    <section class="modal-container visually-hidden">
+      <div class="container modal container-map-window">
+        <h2 class="visually-hidden">Карта</h2>
+        <!-- Пусть пока что будет как-то так -->
+        <iframe  class="map-window" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.200761944884!2d30.316567!3d59.938773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1590362589342!5m2!1sru!2sru"
+         width="940" height="449"></iframe>
+        <button type="button" class="modal-close" aria-label="Закрыть"></button>
+      </div>
+      <button type="button" class="modal-close-background" aria-label="Закрыть"></button>
     </section>
 
   </body>

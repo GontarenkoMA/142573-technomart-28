@@ -398,20 +398,22 @@
     </footer>
 
 
-    <section class="container adding-window">
-      <h2 class="visually-hidden">Добавление товара</h2>
-      <p class="adding-window-message">
-        Товар добавлен в корзину!
-      </p>
-      <ul class="adding-window-footer">
-        <li>
-          <a href="blank.html" class="button">Оформить заказ</a>
-        </li>
-        <li>
-          <button type="button" class="button continue-shopping-button">Продолжить покупки</button>
-        </li>
-      </ul>
-      <button type="button" class="button close-button"><span class="visually-hidden">Закрыть</span></button>
+    <section class="modal-container visually-hidden">
+      <div class="container modal adding-window">
+        <h2 class="visually-hidden">Добавление товара</h2>
+        <p class="adding-window-message">Товар добавлен в корзину!
+        </p>
+        <ul class="modal-footer adding-window-footer">
+          <li>
+            <a href="blank.html" class="button">Оформить заказ</a>
+          </li>
+          <li>
+            <button type="button" class="button continue-shopping-button">Продолжить покупки</button>
+          </li>
+        </ul>
+        <button type="button" class="button modal-close" aria-label="Закрыть"></button>
+      </div>
+      <button type="button" class="modal-close-background" aria-label="Закрыть"></button>
     </section>
 
   </body>
