@@ -1185,9 +1185,9 @@ margin-top: 20px;
   border: none;
   font-size: 21px;
   line-height: 30px;
-  min-width: 240px;
+  width: 240px;
   min-height: 62px;
-  padding: 13.5px 22px 17.5px 22px;
+  padding: 13px 22px 17px 22px;
   text-align: left;
   box-sizing: border-box;
   border-top: 1px solid var(--servicetabtop);
@@ -1202,7 +1202,10 @@ margin-top: 20px;
 .service-tab:disabled {
   color: var(--basic-asphaltsemilight);
   background-color: var(--basic-white);
-  border: none;
+  border-top: 1px solid var(--basic-white);
+  border-bottom: 1px solid var(--basic-white);
+}
+.service-tab:disabled {
   cursor: default;
 }
 .service-tabs-shadow {
