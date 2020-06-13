@@ -854,7 +854,6 @@ margin-top: 20px;
 .slider-control-dots {
   display: flex;
   position: absolute;
-  width 100%;
   justify-content: center;
   column-gap: 10px;
   top: 220px;
