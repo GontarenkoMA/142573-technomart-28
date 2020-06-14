@@ -1352,7 +1352,6 @@ margin-top: 20px;
 .modal-close:hover,
 .modal-close:focus,
 .modal-close:active {
-
   background-color: transparent;
   border: none;
   display: block;
@@ -1763,9 +1762,6 @@ textarea.feedback-window-form {
   width: 27px;
   height: 23px;
 }
-/* Да, плодить svg как-то неправильно, но я не знаю,
-как иначе можно подключить svg через before/after
-с возможностью управления прозрачностью только у некоторых фигур */
 .filter-input-checkbox:checked + .filter-by-producer-item:hover:after,
 .filter-input-checkbox:checked:focus + .filter-by-producer-item:after {
   content: "";
