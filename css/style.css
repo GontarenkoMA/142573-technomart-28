@@ -394,7 +394,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   font-size: 16px;
   line-height: 23px;
   display: block;
-  width: 200px;
+  width: 270px;
   margin: 0;
 }
 .header-address {
@@ -404,7 +404,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   line-height: 24px;
   display: block;
   width: 270px;
-  margin-left: auto;
+  margin-left: 20px;
   margin-right: 10px;
 }
 .header-phone {
@@ -431,6 +431,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: auto;
   display: flex;
   justify-content: center;
   width: 340px;
