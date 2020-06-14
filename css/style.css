@@ -166,6 +166,10 @@ img {
   margin-top: 24px;
 }
 
+*:focus {
+  outline: 1px dotted var(--basic-black);
+}
+
 /* Grid */
 .page {
   height: 100%;
@@ -290,6 +294,10 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
 .header-search-button path {
   opacity: var(--alpha-30);
 }
+.header-search-button:focus path,
+.header-search-button:hover path {
+  opacity: 1;
+}
 .header-search-field:hover+.header-search-button path,
 .header-search-field:active+.header-search-button path,
 .header-search-field:focus+.header-search-button path {
@@ -352,7 +360,9 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   vertical-align: middle;
 }
 .products-interaction-item-bookmarks:hover:before,
-.products-interaction-item-cart:hover:before {
+.products-interaction-item-cart:hover:before,
+.products-interaction-item-bookmarks:focus:before,
+.products-interaction-item-cart:focus:before {
   opacity: 1;
 }
 .products-interaction-item-bookmarks:before,
@@ -361,14 +371,12 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
 .products-interaction-item-cart:active:before {
   opacity: var(--alpha-30);
 }
-.products-interaction-item-order .products-interaction-item-text {
-  text-align: center;
-}
 .products-interaction-item-order {
   background-color: var(--basic-green);
+  text-align: center;
 }
-.products-interaction-item-order:hover,
-.products-interaction-item-order:focus {
+.products-interaction-item-order:focus,
+.products-interaction-item-order:hover {
   background-color: var(--basic-a-greenlight);
 }
 .products-interaction-item-order:active {
@@ -1758,7 +1766,8 @@ textarea.feedback-window-form {
 /* Да, плодить svg как-то неправильно, но я не знаю,
 как иначе можно подключить svg через before/after
 с возможностью управления прозрачностью только у некоторых фигур */
-.filter-input-checkbox:checked + .filter-by-producer-item:hover:after  {
+.filter-input-checkbox:checked + .filter-by-producer-item:hover:after,
+.filter-input-checkbox:checked:focus + .filter-by-producer-item:after {
   content: "";
   background-image:url("../img/checkbox-on-hover.svg");
   background-repeat: no-repeat;
@@ -1795,7 +1804,10 @@ textarea.feedback-window-form {
 }
 .filter-by-power-item:hover:before,
 .filter-by-producer-item:hover:before,
-.filter-input-radio:checked + .filter-by-power-item:hover:after {
+.filter-input-radio:checked + .filter-by-power-item:hover:after,
+.filter-input-checkbox:focus + .filter-by-producer-item:before,
+.filter-input-radio:focus + .filter-by-power-item:before,
+.filter-input-radio:focus + .filter-by-power-item:after {
   opacity: 1;
 }
 .filter-input-checkbox:disabled + .filter-by-producer-item,
