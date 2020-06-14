@@ -1799,6 +1799,11 @@ textarea.feedback-window-form {
   border-radius: 50%;
   opacity: 0.78;
 }
+.filter-input-checkbox:focus + .filter-by-producer-item,
+.filter-input-radio:focus + .filter-by-power-item {
+  outline: 1px dotted var(--basic-black);
+  outline-offset: -1px;
+}
 .filter-by-power-item:hover:before,
 .filter-by-producer-item:hover:before,
 .filter-input-radio:checked + .filter-by-power-item:hover:after,
