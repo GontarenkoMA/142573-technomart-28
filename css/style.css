@@ -457,7 +457,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
+  justify-content: center;
 }
 .user-navigation-log {
   color: var(--basic-black);
@@ -1882,6 +1882,7 @@ textarea.feedback-window-form {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-top: 48px;
 }
@@ -1929,6 +1930,7 @@ textarea.feedback-window-form {
 }
 .next-page-number {
   min-width: 140px;
+  margin-right: 0;
 }
 .submit-filter {
   width: 220px;
