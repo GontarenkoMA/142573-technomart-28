@@ -425,7 +425,8 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   padding: 0;
   padding-left: 29px;
 }
-.user-navigation {
+.user-navigation,
+.user-navigation-inside {
   font-size: 21px;
   line-height: 21px;
   list-style: none;
@@ -433,9 +434,30 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   margin: 0;
   margin-left: auto;
   display: flex;
-  justify-content: center;
-  width: 340px;
+  justify-content: flex-end;
   flex-wrap: wrap;
+}
+.user-navigation {
+  width: 340px;
+  font-size: 21px;
+  line-height: 21px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.user-navigation-inside {
+  font-size: 21px;
+  line-height: 21px;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
 }
 .user-navigation-log {
   color: var(--basic-black);
@@ -486,7 +508,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
 .user-navigation-log:active {
   color: var(--basic-greylight);
 }
-.user-navigation-inside {
+.user-navigation-inside-link {
   color: var(--basic-asphaltsemilight);
   background-color: transparent;
   font-size: 16px;
@@ -497,7 +519,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
 .user-navigation-inside-item:not(:first-of-type) {
   margin-left: 14px;
 }
-.user-navigation-inside-item:last-of-type:before {
+.user-navigation-inside-item:not(:first-of-type):before {
   content: "";
   display: inline-block;
   background-color: var(--basic-asphaltsemilight);
@@ -508,11 +530,11 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   margin-bottom: 2.5px;
   margin-right: 14px;
 }
-.user-navigation-inside:hover,
-.user-navigation-inside:focus {
+.user-navigation-inside-link:hover,
+.user-navigation-inside-link:focus {
   color: var(--basic-red);
 }
-.user-navigation-inside:active {
+.user-navigation-inside-link:active {
   color: var(--basic-greylight);
 }
 
