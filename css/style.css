@@ -208,7 +208,7 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-asphalt);
   width: 100%;
-  margin-bottom: 37.5px;
+  margin-bottom: 46px;
   min-height: 42px;
 }
 .main-header-top-content {
@@ -408,6 +408,7 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   display: block;
   width: 270px;
   margin: 0;
+  margin-left: 30px;
 }
 .header-address {
   text-align: center;
@@ -1264,6 +1265,9 @@ input[type="search"]:focus::placeholder { opacity: var(--alpha-30);}
   padding: 0;
   padding-top: 70px;
   margin: 0;
+}
+.section-service-wrapper {
+  padding-top: 64px;
 }
 .section-facts-wrapper {
   padding: 64px 0 68px 0;
