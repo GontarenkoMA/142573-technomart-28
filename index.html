@@ -5,10 +5,8 @@
     <title>Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!--
-    <meta name="keywords" content="">
-    <meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
-    -->
+    <meta name="keywords" content="Материалы, инструменты, техника, ремонт, стройка, перфоратор, дрель, магазин, купить, заказать, Техномарт, Санкт-Петербург">
+    <meta name="description" content="Интернет-магазин — «Техномарт». Огромный выбор товаров для ремонта и строительства с доставкой по всей России.">
   </head>
   <body class="page-body">
 
@@ -21,7 +19,8 @@
 
           <form action="https://echo.htmlacademy.ru/" method="get" class="header-search-form">
             <div class="header-search">
-              <input type="search" name="search" area-lable="Поиск:" class="header-search-field" id="search-field" placeholder="Поиск:" required>
+              <label for="search-field" class="visually-hidden">Поиск:</label>
+              <input type="search" name="search" class="header-search-field" id="search-field" placeholder="Поиск:" required>
               <button type="submit" class="header-search-button">
                 <svg class="header-search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
@@ -51,15 +50,17 @@
 
         <ul class="user-navigation">
           <li>
-            <a href="blank.html" class="user-navigation-log login">
-              <svg width="21" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.875 8.5L6 0v6H0v5h6v6l8.875-8.5z" fill="#C5C5C5"/>
-                <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" fill="#C5C5C5"/>
+            <a href="blank.html" class="user-navigation-log-button login">
+              <svg class="icon-login" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
+                <path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
               </svg>
-              <span class="user-navigation-log-login">Войти</span>
+              <span>Войти</span>
             </a>
           </li>
-          <li><a href="blank.html" class="user-navigation-log">Регистрация</a></li>
+          <li>
+            <a href="blank.html" class="user-navigation-log-button registration">Регистрация</a>
+          </li>
         </ul>
 
         <nav class="header-navigation-wrapper">
@@ -80,21 +81,21 @@
     <main class="index-page">
       <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
 
-      <div class="container catalog-links">
+      <div class="container promo">
         <section>
           <h2 class="visually-hidden">Разделы каталога</h2>
-          <ul class="container catalog-sections">
-            <li class="catalog-sections-item catalog-sections-materials lable-new">
-              <h3 class="catalog-links-item-name">Материалы</h3>
-              <a href="blank.html" class="button catalog-links-button">на любой вкус</a>
+          <ul class="container promo-section catalog-sections">
+            <li class="promo-item catalog-sections-materials label-new">
+              <h3 class="promo-item-name">Материалы</h3>
+              <a href="blank.html" class="button promo-button">на любой вкус</a>
             </li>
-            <li class="catalog-sections-item catalog-sections-instruments">
-              <h3 class="catalog-links-item-name">Инструмент</h3>
-              <a href="blank.html" class="button catalog-links-button">на все случаи</a>
+            <li class="promo-item catalog-sections-instruments">
+              <h3 class="promo-item-name">Инструмент</h3>
+              <a href="blank.html" class="button promo-button">на все случаи</a>
             </li>
-            <li class="catalog-sections-item catalog-sections-machines">
-              <h3 class="catalog-links-item-name">Техника</h3>
-              <a href="blank.html" class="button catalog-links-button">для стройки</a>
+            <li class="promo-item catalog-sections-machines">
+              <h3 class="promo-item-name">Техника</h3>
+              <a href="blank.html" class="button promo-button">для стройки</a>
             </li>
           </ul>
         </section>
@@ -130,21 +131,21 @@
 
         <section>
           <h2 class="visually-hidden">Специальные предложения</h2>
-          <ul class="container special-offers">
-            <li class="special-offers-item special-offers-discount">
-              <h3 class="catalog-links-item-name">Скидки 50%</h3>
-              <a href="blank.html" class="button catalog-links-button">На 350 ТОВАРОВ</a>
+          <ul class="container promo-section special-offers">
+            <li class="promo-item special-offers-discount">
+              <h3 class="promo-item-name">Скидки 50%</h3>
+              <a href="blank.html" class="button promo-button">На 350 ТОВАРОВ</a>
             </li>
-            <li class="special-offers-item special-offers-delivery">
-              <h3 class="catalog-links-item-name">Доставка</h3>
-              <a href="blank.html" class="button catalog-links-button">Бесплатно</a>
+            <li class="promo-item special-offers-delivery">
+              <h3 class="promo-item-name">Доставка</h3>
+              <a href="blank.html" class="button promo-button">Бесплатно</a>
             </li>
           </ul>
         </section>
       </div>
 
       <section class="container subsection">
-        <div class="subsection-header">
+        <div class="section-header">
           <h2 class="section-name">Популярные товары:</h2>
           <a href="catalog.html" class="button">Все популярные товары</a>
         </div>
@@ -161,7 +162,7 @@
             <del class="old-price">32500 Р.</del>
             <ins class="actual-price">25500 Р.</ins>
           </li>
-          <li class="catalog-item lable-new">
+          <li class="catalog-item label-new">
             <ul class="catalog-item-buttons">
               <li><button type="button" class="button add-to-cart">Купить</button></li>
               <li><button type="button" class="button add-to-bookmarks">В закладки</button></li>
@@ -185,7 +186,7 @@
             <del class="old-price">30500 Р.</del>
             <ins class="actual-price">25500 Р.</ins>
           </li>
-          <li class="catalog-item lable-new">
+          <li class="catalog-item label-new">
             <ul class="catalog-item-buttons">
               <li><button type="button" class="button add-to-cart">Купить</button></li>
               <li><button type="button" class="button add-to-bookmarks">В закладки</button></li>
@@ -200,7 +201,7 @@
       </section>
 
       <section class="container subsection">
-        <div class="subsection-header">
+        <div class="section-header">
           <h2 class="section-name">Популярные производители:</h2>
           <a href="catalog.html" class="button">Все производители</a>
         </div>
@@ -297,7 +298,7 @@
             <li class="transport-companies-item">Автотрейдинг</li>
             <li class="transport-companies-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="blank.html" class="button">Подробнее о компании</a>
+          <a href="blank.html" class="button more-info-button">Подробнее о компании</a>
         </section>
 
         <section class="subsection">
@@ -320,7 +321,7 @@
 
       <div class="container">
         <a  class="footer-logo disabled-link">
-          <img src="img/logo-technomart.svg"  class="footer-logo-img" width="136.5" height="21.6" alt="Логотип интернет-магазина «Техномарт»">
+          <img src="img/logo-technomart.svg"  class="footer-logo-img" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
         </a>
 
         <nav class="footer-site-navigation">
@@ -374,7 +375,7 @@
               </li>
               <li class="contact-authours-item">
                 Разработано —<br>
-                <a href="https://htmlacademy.ru/study" class="contact-authours">htmlacademy.ru</a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss" class="contact-authours">htmlacademy.ru</a>
               </li>
             </ul>
           </section>
@@ -403,7 +404,7 @@
             </label>
           </div>
           <div class="modal-footer">
-            <input type="submit" value="Оформить заказ" class="button feedback-window-submit">
+            <input type="submit" value="Отправить" class="button feedback-window-submit">
           </div>
         </form>
         <button type="button" class="modal-close" aria-label="Закрыть"></button>
@@ -414,7 +415,7 @@
     <section class="modal-container visually-hidden">
       <div class="container modal container-map-window">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe  class="map-window" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.200761944884!2d30.316567!3d59.938773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1590362589342!5m2!1sru!2sru"
+        <iframe  class="map-window" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5660879029747!2d30.318894682485865!3d59.939342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592814160192!5m2!1sru!2sru"
          width="940" height="449"></iframe>
         <button type="button" class="modal-close" aria-label="Закрыть"></button>
       </div>
