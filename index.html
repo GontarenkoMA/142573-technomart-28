@@ -30,8 +30,8 @@
           </form>
 
           <ul class="products-interaction">
-            <li class="products-interaction-item"><a href="blank.html" class="products-interaction-item-text products-interaction-item-bookmarks">Закладки: <span>0</span></a></li>
-            <li class="products-interaction-item"><a href="blank.html" class="products-interaction-item-text products-interaction-item-cart">Корзина: <span>0</span></a></li>
+            <li class="products-interaction-item"><a href="blank.html" class="products-interaction-item-text products-interaction-item-bookmarks">Закладки: <span class="counter-bookmarks">0</span></a></li>
+            <li class="products-interaction-item"><a href="blank.html" class="products-interaction-item-text products-interaction-item-cart">Корзина: <span class="counter-cart">0</span></a></li>
             <li class="products-interaction-item"><a href="blank.html" class="products-interaction-item-text products-interaction-item-order">Оформить заказ</a></li>
           </ul>
         </div>
@@ -242,9 +242,9 @@
           </p>
           <div class="service-tabs">
             <ul class="services-tab-list">
-              <li><button type="button" class="service-tab" disabled>Доставка</button></li>
-              <li><button type="button" class="service-tab">Гарантия</button></li>
-              <li><button type="button" class="service-tab">Кредит</button></li>
+              <li><button type="button" class="service-tab tab-delivery" disabled>Доставка</button></li>
+              <li><button type="button" class="service-tab tab-guarantee">Гарантия</button></li>
+              <li><button type="button" class="service-tab tab-credit">Кредит</button></li>
             </ul>
             <div class="service-tabs-shadow"></div>
             <div class="services-items">
@@ -270,8 +270,8 @@
               <article class="services-item service-credit visually-hidden">
                 <h3 class="subsection-name">Кредит</h3>
                 <p class="paragraph-text">
-                  Если купленный у нас товар поломается или заискрит,<br>
-                  а также в случае пожара, спровоцированного его
+                  Залезть в долговую яму стало проще!<br>
+                   Кредитные консультанты придут вам на помощь.
                 </p>
                 <button type="button" class="button credit-button">Отправить заявку</button>
               </article>
@@ -384,23 +384,23 @@
 
     </footer>
 
-    <section class="modal-container visually-hidden">
-      <div class="container modal container-feedback-window">
+    <section class="modal-container container-feedback-window">
+      <div class="container modal feedback-window">
         <h2 class="visually-hidden">Обратная связь</h2>
 
-        <form action="https://echo.htmlacademy.ru/" method="post" class="feedback-window">
+        <form action="https://echo.htmlacademy.ru/" method="post" class="feedback-window-form">
           <div class="feedback-window-form-main">
             <label>
               Ваше имя:
-              <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required autocomplete="on" class="paragraph-text feedback-window-form">
+              <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on" class="paragraph-text feedback-window-field user-name">
             </label>
             <label>
               Ваш e-mail:
-              <input type="email" name="email" id="email-field" placeholder="email@example.com" required autocomplete="on" class="paragraph-text feedback-window-form">
+              <input type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on" class="paragraph-text feedback-window-field user-email">
             </label>
             <label>
               Текст письма:
-              <textarea name="message" id="message-field" rows="5" placeholder="В свободной форме" required autocomplete="off" class="paragraph-text feedback-window-form"></textarea>
+              <textarea name="message" id="message-field" rows="5" placeholder="В свободной форме" autocomplete="off" class="paragraph-text feedback-window-field message-text"></textarea>
             </label>
           </div>
           <div class="modal-footer">
@@ -412,15 +412,38 @@
       <button type="button" class="modal-close-background" aria-label="Закрыть"></button>
     </section>
 
-    <section class="modal-container visually-hidden">
-      <div class="container modal container-map-window">
+    <section class="modal-container container-map-window">
+      <div class="container modal map-window">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe  class="map-window" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5660879029747!2d30.318894682485865!3d59.939342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592814160192!5m2!1sru!2sru"
+        <iframe  class="map-window-content" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5660879029747!2d30.318894682485865!3d59.939342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592814160192!5m2!1sru!2sru"
          width="940" height="449"></iframe>
         <button type="button" class="modal-close" aria-label="Закрыть"></button>
       </div>
       <button type="button" class="modal-close-background" aria-label="Закрыть"></button>
     </section>
+
+    <section class="modal-container container-adding-window">
+      <div class="container modal adding-window">
+        <h2 class="visually-hidden">Добавление товара</h2>
+        <p class="adding-window-message">Товар добавлен в корзину!</p>
+        <ul class="modal-footer adding-window-footer">
+          <li>
+            <a href="blank.html" class="button">Оформить заказ</a>
+          </li>
+          <li>
+            <button type="button" class="button continue-shopping-button">Продолжить покупки</button>
+          </li>
+        </ul>
+        <button type="button" class="button modal-close" aria-label="Закрыть"></button>
+      </div>
+      <button type="button" class="modal-close-background" aria-label="Закрыть"></button>
+    </section>
+
+    <script src="js/slider.js"></script>
+    <script src="js/adding.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/feedback.js"></script>
 
   </body>
 </html>

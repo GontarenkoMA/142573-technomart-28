@@ -160,16 +160,16 @@ img {
   margin: 0;
   margin-top: 21px;
   margin-right: 10px;
+  line-height: 25px;
 }
 .section-service-wrapper .paragraph-text {
-  margin-top: 24px;
+  margin-top: 23px;
 }
 .section-facts-wrapper .paragraph-text {
   margin-top: 23px;
-  line-height: 25px;
 }
 .paragraph-text + .paragraph-text {
-  margin-top: 27px;
+  margin-top: 24px;
 }
 
 *:focus {
@@ -1140,7 +1140,6 @@ img {
   margin: 0;
   justify-content: space-between;
   align-content: flex-start;
-
 }
 .catalog-item,
 .producer-item-link {
@@ -1421,6 +1420,7 @@ img {
   border-bottom: 1px solid var(--basic-asphalt);
   cursor: pointer;
   font-weight: 700;
+  display: block;
  }
 .service-tab:hover,
 .service-tab:focus {
@@ -1474,6 +1474,9 @@ img {
   background-image: url("../img/pic-guarantee.png");
   background-position: right 2px bottom 5px;
 }
+.service-guarantee .subsection-name {
+  margin-bottom: 22px;
+}
 .service-credit {
   background-repeat: no-repeat;
   background-image: url("../img/pic-credit.png");
@@ -1483,6 +1486,7 @@ img {
   min-width: 195px;
   background-color: var(--basic-redlight);
   border-radius: 2px;
+  margin-top: 25px;
 }
 .container .subsection {
   align-items: flex-start;
@@ -1524,7 +1528,7 @@ img {
   display: block;
   width: 300px;
   height: 158px;
-  margin: 34px 0 25px;
+  margin: 32px 0 26px;
 }
 .mini-map-picture {
   object-fit: contain;
@@ -1540,16 +1544,20 @@ img {
 }
 
 /* Modal windows */
+
+/* Modal  common */
 .modal-container {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 5;
   width: 100%;
   height: 100%;
+  display: none;
 }
 .modal-close-background {
   position: fixed;
@@ -1564,17 +1572,11 @@ img {
   cursor: pointer;
   border: none;
 }
-/* Включается у body, когда какое-либо модальное окно открыто,
-чтобы не скролилось то, что под модальным окном. Ну как вариант.. */
-.modal-background {
+.modal-background-noscroll {
   overflow: hidden;
 }
 .modal {
   position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -1634,13 +1636,20 @@ img {
 .modal-close::after {
   transform: rotate(-45deg);
 }
+.modal-show {
+  display: flex;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
 
 /* Index feedback window */
 
-.container-feedback-window {
+.feedback-window {
   left: -8px;
 }
-.feedback-window {
+.feedback-window-form {
   text-align: left;
   font-size: 18px;
   line-height: 24px;
@@ -1653,7 +1662,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.feedback-window-form {
+.feedback-window-field {
   color: var(--basic-black);
   border: 2px solid var(--basic-greylight);
   border-radius: 2px;
@@ -1666,7 +1675,7 @@ img {
   min-height: 38px;
   box-sizing: border-box;
 }
-textarea.feedback-window-form {
+textarea.feedback-window-field {
   width: 460px;
   height: 114px;
   margin-bottom: 0;
@@ -1678,12 +1687,12 @@ textarea.feedback-window-form {
 }
 
 /* Index map window */
-.container-map-window {
+.map-window {
   height: 449px;
   width: 940px;
   border-top: 7px solid var(--basic-red);
 }
-.map-window {
+.map-window-content {
   border: none;
 }
 .continue-shopping-button,
@@ -1695,7 +1704,7 @@ textarea.feedback-window-form {
   margin-left: 10px;
 }
 
-/* catalog adding window */
+/* Catalog adding window */
 .adding-window {
   left: 16px;
 }
@@ -1735,6 +1744,48 @@ textarea.feedback-window-form {
 .adding-window-footer {
   background-color: var(--addedfooter);
   padding-left: 82px;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 /* catalog */
