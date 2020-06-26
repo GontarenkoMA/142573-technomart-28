@@ -8,12 +8,14 @@ var addingWindow = document.querySelector(".container-adding-window");
 var addingClose = addingWindow.querySelector(".modal-close");
 var addingCloseBackground = addingWindow.querySelector(".modal-close-background");
 var continueShopping = addingWindow.querySelector(".continue-shopping-button");
+var orderStuff = addingWindow.querySelector("a.button");
 
 addingCarts.forEach(function(el) {
   el.addEventListener("click", function(evt) {
     evt.preventDefault();
     userCart.classList.add("products-interaction-notempty");
     addingWindow.classList.add("modal-show");
+    orderStuff.focus();
     counterCart.innerHTML = (counterCart.innerHTML | 0) + 1;
   });
 });

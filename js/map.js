@@ -6,6 +6,7 @@ var mapCloseBackground = mapWindow.querySelector(".modal-close-background");
 miniMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapWindow.classList.add("modal-show");
+  mapClose.focus();
 });
 
 
