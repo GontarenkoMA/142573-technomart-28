@@ -23,7 +23,7 @@ lostButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackWindow.classList.add("modal-show");
 
-  if (userName) {
+  if (storageUserName) {
     userName.value = storageUserName;
     userEmail.value = storageUserEmail;
     messageText.focus();
