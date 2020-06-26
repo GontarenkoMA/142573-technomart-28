@@ -104,17 +104,17 @@
           <h2 class="visually-hidden">Подразделы раздела каталога "Инструменты"</h2>
           <div class="slider-instruments">
             <div class="slider-items">
-              <article class="slider-item slider-item-perforator slider-item-current">
-                <div class="slider-header">
-                  <h3 class="slider-item-name">Перфораторы</h3>
-                  <p class="slider-item-description">Настоящие мужские игрушки</p>
-                </div>
-                <a href="catalog.html" class="button slider-item-link">Открыть каталог</a>
-              </article>
               <article class="slider-item slider-item-drill">
                 <div class="slider-header">
                   <h3 class="slider-item-name">Дрели</h3>
                   <p class="slider-item-description">Соседям на радость!</p>
+                </div>
+                <a href="catalog.html" class="button slider-item-link">Открыть каталог</a>
+              </article>
+              <article class="slider-item slider-item-perforator">
+                <div class="slider-header">
+                  <h3 class="slider-item-name">Перфораторы</h3>
+                  <p class="slider-item-description">Настоящие мужские игрушки</p>
                 </div>
                 <a href="catalog.html" class="button slider-item-link">Открыть каталог</a>
               </article>
@@ -123,9 +123,7 @@
               <button type="button" class="slider-control-button slider-control-button-backward"><span class="visually-hidden">Назад</span></button>
               <button type="button" class="slider-control-button slider-control-button-forward"><span class="visually-hidden">Вперед</span></button>
             </div>
-            <div class="slider-control-dots">
-              <button type="button" class="slider-control-dot" aria-label="Первый слайд"></button><button type="button" class="slider-control-dot" aria-label="Второй слайд" disabled></button>
-            </div>
+            <div class="slider-control-dots"></div>
           </div>
         </section>
 
@@ -242,7 +240,7 @@
           </p>
           <div class="service-tabs">
             <ul class="services-tab-list">
-              <li><button type="button" class="service-tab tab-delivery" disabled>Доставка</button></li>
+              <li><button type="button" class="service-tab tab-delivery">Доставка</button></li>
               <li><button type="button" class="service-tab tab-guarantee">Гарантия</button></li>
               <li><button type="button" class="service-tab tab-credit">Кредит</button></li>
             </ul>
@@ -257,7 +255,7 @@
                   поднимая его на ваш этаж!
                 </p>
               </article>
-              <article class="services-item service-guarantee visually-hidden">
+              <article class="services-item service-guarantee">
                 <h3 class="subsection-name">Гарантия</h3>
                 <p class="paragraph-text">
                   Если купленный у нас товар поломается или заискрит,<br>
@@ -267,7 +265,7 @@
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </article>
-              <article class="services-item service-credit visually-hidden">
+              <article class="services-item service-credit">
                 <h3 class="subsection-name">Кредит</h3>
                 <p class="paragraph-text">
                   Залезть в долговую яму стало проще!<br>
@@ -440,6 +438,7 @@
     </section>
 
     <script src="js/slider.js"></script>
+    <script src="js/focus.js"></script>
     <script src="js/adding.js"></script>
     <script src="js/services.js"></script>
     <script src="js/map.js"></script>

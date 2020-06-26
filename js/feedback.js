@@ -1,6 +1,5 @@
-var pageBody = document.querySelector(".page-body");
-var lostButton = pageBody.querySelector(".lost-button");
-var feedbackWindow = pageBody.querySelector(".container-feedback-window");
+var lostButton = document.querySelector(".lost-button");
+var feedbackWindow = document.querySelector(".container-feedback-window");
 var feedbackFrame = feedbackWindow.querySelector(".feedback-window");
 var feedbackClose = feedbackWindow.querySelector(".modal-close");
 var feedbackCloseBackground = feedbackWindow.querySelector(".modal-close-background");
@@ -23,7 +22,6 @@ try {
 lostButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackWindow.classList.add("modal-show");
-  pageBody.classList.add("modal-background-noscroll");
 
   if (userName) {
     userName.value = storageUserName;
@@ -52,14 +50,12 @@ feedbackClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackWindow.classList.remove("modal-show");
   feedbackFrame.classList.remove("modal-error");
-  pageBody.classList.remove("modal-background-noscroll");
 });
 
 feedbackCloseBackground.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackWindow.classList.remove("modal-show");
   feedbackFrame.classList.remove("modal-error");
-  pageBody.classList.remove("modal-background-noscroll");
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -68,7 +64,6 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       feedbackWindow.classList.remove("modal-show");
       feedbackFrame.classList.remove("modal-error");
-      pageBody.classList.remove("modal-background-noscroll");
     }
   }
 });
