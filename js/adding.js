@@ -21,7 +21,6 @@ addingCarts.forEach(function(el) {
 addingBookmarks.forEach(function(el) {
   el.addEventListener("click", function(evt) {
     evt.preventDefault();
-    userCart.classList.add("products-interaction-notempty");
     userBookmarks.classList.add("products-interaction-notempty");
     counterBookmarks.innerHTML = (counterBookmarks.innerHTML | 0) + 1;
   });
