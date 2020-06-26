@@ -9,22 +9,23 @@ var addingClose = addingWindow.querySelector(".modal-close");
 var addingCloseBackground = addingWindow.querySelector(".modal-close-background");
 var continueShopping = addingWindow.querySelector(".continue-shopping-button");
 
-for (let addingCart of addingCarts) {
-  addingCart.addEventListener("click", function (evt) {
+addingCarts.forEach(function(el) {
+  el.addEventListener("click", function(evt) {
     evt.preventDefault();
     userCart.classList.add("products-interaction-notempty");
     addingWindow.classList.add("modal-show");
     counterCart.innerHTML = (counterCart.innerHTML | 0) + 1;
-  })
-};
+  });
+});
 
-for (let addingBookmark of addingBookmarks) {
-  addingBookmark.addEventListener("click", function (evt) {
+addingBookmarks.forEach(function(el) {
+  el.addEventListener("click", function(evt) {
     evt.preventDefault();
+    userCart.classList.add("products-interaction-notempty");
     userBookmarks.classList.add("products-interaction-notempty");
     counterBookmarks.innerHTML = (counterBookmarks.innerHTML | 0) + 1;
-  })
-};
+  });
+});
 
 addingClose.addEventListener("click", function (evt) {
   evt.preventDefault();

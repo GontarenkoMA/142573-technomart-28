@@ -12,10 +12,10 @@ for (var i = 0; i < n + 1; i++) {
 var controlDots = controlDots.querySelectorAll(".slider-control-dot");
 
 for (var j = 0; j < n + 1; j++) {
-	controlDots[j].classList.remove("slider-control-dot-current")
+	controlDots[j].classList.remove("slider-control-dot-current");
 	sliderItems[j].classList.remove("slider-item-current");
 }
-controlDots[x].classList.add("slider-control-dot-current")
+controlDots[x].classList.add("slider-control-dot-current");
 sliderItems[x].classList.add("slider-item-current");
 
 controlDots.forEach(function(el, index) {
@@ -39,15 +39,15 @@ controlBackward.addEventListener("click", function (evt) {
   if (x === 0) {
 		x = n;
 		sliderItems[x].classList.add("slider-item-current");
-		controlDots[x].classList.add("slider-control-dot-current")
+		controlDots[x].classList.add("slider-control-dot-current");
 		sliderItems[0].classList.remove("slider-item-current");
-		controlDots[0].classList.remove("slider-control-dot-current")
+		controlDots[0].classList.remove("slider-control-dot-current");
 	} else {
 		x = x - 1;
 		sliderItems[x].classList.add("slider-item-current");
-		controlDots[x].classList.add("slider-control-dot-current")
+		controlDots[x].classList.add("slider-control-dot-current");
 		sliderItems[x+1].classList.remove("slider-item-current");
-		controlDots[x+1].classList.remove("slider-control-dot-current")
+		controlDots[x+1].classList.remove("slider-control-dot-current");
 	}
 });
 
@@ -56,14 +56,14 @@ controlForward.addEventListener("click", function (evt) {
   if (x == n) {
 		x = 0;
 		sliderItems[x].classList.add("slider-item-current");
-		controlDots[x].classList.add("slider-control-dot-current")
+		controlDots[x].classList.add("slider-control-dot-current");
 		sliderItems[n].classList.remove("slider-item-current");
-		controlDots[n].classList.remove("slider-control-dot-current")
+		controlDots[n].classList.remove("slider-control-dot-current");
 	} else {
 		x = x + 1;
 		sliderItems[x].classList.add("slider-item-current");
-		controlDots[x].classList.add("slider-control-dot-current")
+		controlDots[x].classList.add("slider-control-dot-current");
 		sliderItems[x-1].classList.remove("slider-item-current");
-		controlDots[x-1].classList.remove("slider-control-dot-current")
+		controlDots[x-1].classList.remove("slider-control-dot-current");
 	}
 });
