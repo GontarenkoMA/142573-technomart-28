@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 @font-face {
   font-family: 'Cuprum';
   font-style: normal;
@@ -183,6 +190,7 @@ img {
 .page-body {
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -237,7 +245,8 @@ img {
   margin: auto;
   width: 108px;
   height: 18px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header-logo:active {
   background-color: var(--basic-a-reddark);
@@ -277,11 +286,11 @@ img {
   color: var(--basic-white);
   opacity: 1;
 }
-.header-search-field:-ms-input-placeholder {
+.header-search-field::-webkit-input-placeholder {
   color: var(--basic-white);
   opacity: 1;
 }
-.header-search-field::-ms-input-placeholder {
+.header-search-field::-moz-placeholder {
   color: var(--basic-white);
   opacity: 1;
 }
@@ -294,13 +303,11 @@ img {
   color: var(--basic-black);
   opacity: 1;
 }
-.header-search-field:active:-ms-input-placeholder,
-.header-search-field:focus:-ms-input-placeholder {
+.header-search-field:active::-webkit-input-placeholder, .header-search-field:focus::-webkit-input-placeholder {
   color: var(--basic-black);
   opacity: 1;
 }
-.header-search-field:active::-ms-input-placeholder,
-.header-search-field:focus::-ms-input-placeholder {
+.header-search-field:active::-moz-placeholder, .header-search-field:focus::-moz-placeholder {
   color: var(--basic-black);
   opacity: 1;
 }
@@ -718,7 +725,8 @@ img {
   margin: auto;
   width: 138px;
   height: 23px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-top: 19px;
 }
 .footer-logo:active {
@@ -1216,7 +1224,8 @@ img {
 .producer-item-img {
   display: block;
   margin: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-color: var(--basic-white);
   max-height: 131px;
   max-width: 206px;
@@ -1249,7 +1258,8 @@ img {
 }
 .catalog-item-photo {
   margin: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-color: var(--basic-white);
   max-height: 164px;
   max-width: 206px;
@@ -1539,7 +1549,8 @@ img {
   margin: 32px 0 26px;
 }
 .mini-map-picture {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-color: var(--basic-white);
   max-width: 300px;
   max-height: 158px;
@@ -1646,10 +1657,12 @@ img {
 }
 .modal-show {
   display: flex;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 /* Index feedback window */
@@ -1756,6 +1769,24 @@ textarea.feedback-window-field {
 
 /* Animations */
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -1771,6 +1802,28 @@ textarea.feedback-window-field {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
@@ -2084,7 +2137,9 @@ textarea.feedback-window-field {
   display: block;
   position: relative;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding-left: 35px;
   margin-bottom: 20px;
   margin-top: 17px;
