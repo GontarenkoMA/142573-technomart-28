@@ -630,6 +630,7 @@ img {
 .user-navigation-inside-item:not(:first-of-type):before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   background-color: var(--basic-asphaltsemilight);
   height: 4px;
   width: 4px;
@@ -1353,7 +1354,7 @@ img {
 .add-to-cart::before {
   content: url("../img/icon-cart.svg");
   opacity: var(--alpha-30);
-  display: inline-block;
+  display: block;
   width: 15px;
   height: 15px;
   margin: 0;
@@ -1742,13 +1743,13 @@ textarea.feedback-window-field {
   margin-right: 81px;
   box-sizing: border-box;
   text-align: left;
-  display: inline-block;
+  display: block;
   position: relative;
 }
 .adding-window-message::before {
   content: url("../img/icon-mark.svg");
   background-color: var(--basic-green);
-  display: inline-block;
+  display: block;
   position: absolute;
   left: 0;
   top: -18px;
@@ -1989,6 +1990,7 @@ textarea.feedback-window-field {
   padding: 0;
   border-style: solid;
   display: inline-block;
+  vertical-align: baseline;
 }
 .showing-parameter:focus,
 .showing-parameter:hover {
