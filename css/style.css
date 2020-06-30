@@ -58,6 +58,7 @@
   --basic-white: #ffffff;
   --rgb-white: 255, 255, 255;
   --basic-black: #000000;
+  --rgb-black: 0, 0, 0;
 /* 50 оттенков асфальта */
   --basic-asphaltxxlight: #F3F7F9;    /*фон хедера?, телефона в хедере*/
   --basic-asphaltxlight: #F2F6F8;     /*фон заголовка страницы каталога*/
@@ -108,6 +109,8 @@
   --catalogbuttons: #E5E5E5;          /*границы кнопок "Показать" и навигации страниц в каталоге*/
   --servicetabtop: #405069;          /*верхняя граница кнопки-вкладки в разделе Сервисы*/
   --pricerangecontrol: #ABABAB;          /*кружочек в слайдере цены*/
+  --alpha-15: 0.15;
+  --alpha-25: 0.25;
   --alpha-30: 0.3;
   --alpha-50: 0.5;
 }
@@ -1018,7 +1021,7 @@ img {
   padding: 23px 20px 16px 24px;
   width: 100%;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(var(--rgb-black), var(--alpha-25));
   margin-bottom: 18px;
 }
 .slider-item-link {
@@ -1233,7 +1236,7 @@ img {
 .catalog-item:focus,
 .producer-item-link:hover,
 .producer-item-link:focus {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(var(--rgb-black), var(--alpha-15));
 }
 .catalog-item:hover .catalog-item-buttons,
 .catalog-item:focus .catalog-item-buttons {
@@ -1459,7 +1462,7 @@ img {
   margin: 0;
   margin-top: 26px;
   border-radius: 10px/100px;
-  box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px 4px rgba(var(--rgb-black), var(--alpha-30));
   z-index: 1;
 }
 .services-items {
@@ -1606,7 +1609,7 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px rgba(var(--rgb-black), var(--alpha-15));
 }
 .modal-footer {
   background-color: var(--feedbackfooter);
@@ -1953,7 +1956,7 @@ textarea.feedback-window-field {
 .sorting-parameter,
 .showing-parameter {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(var(--rgb-black), var(--alpha-30));
   font-family: "Ptsans", Arial, sans-serif;
   font-size: 13px;
   line-height: 15px;
